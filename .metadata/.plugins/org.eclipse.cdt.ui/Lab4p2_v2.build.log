@@ -1,0 +1,32 @@
+
+**** Build of configuration Debug for project Lab4p2_v2 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../FFT_radix2.c"
+Invoking: C6000 Compiler
+"C:/ti/ccsv8/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/gabriel/Desktop/Lab DSP/Lab4p2_v2" --include_path="C:/Users/gabriel/Desktop/Lab DSP/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv8/tools/compiler/c6000_7.4.24/include" --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="FFT_radix2.d_raw"  "../FFT_radix2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'FFT_radix2.obj' failed
+"../FFT_radix2.c", line 20: error #28: expression must have a constant value
+"../FFT_radix2.c", line 21: error #28: expression must have a constant value
+"../FFT_radix2.c", line 30: error #28: expression must have a constant value
+"../FFT_radix2.c", line 31: error #28: expression must have a constant value
+"../FFT_radix2.c", line 33: warning #225-D: function declared implicitly
+"../FFT_radix2.c", line 41: error #169: argument of type "Complex" is incompatible with parameter of type "Complex *"
+5 errors detected in the compilation of "../FFT_radix2.c".
+gmake: *** [FFT_radix2.obj] Error 1
+Building file: "../L4p2.c"
+Invoking: C6000 Compiler
+"C:/ti/ccsv8/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/gabriel/Desktop/Lab DSP/Lab4p2_v2" --include_path="C:/Users/gabriel/Desktop/Lab DSP/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv8/tools/compiler/c6000_7.4.24/include" --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="L4p2.d_raw"  "../L4p2.c"
+ 
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'L4p2.obj' failed
+"../L4p2.c", line 24: fatal error #5: could not open source file "flt_samp_time.h"
+1 fatal error detected in the compilation of "../L4p2.c".
+Compilation terminated.
+gmake: *** [L4p2.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

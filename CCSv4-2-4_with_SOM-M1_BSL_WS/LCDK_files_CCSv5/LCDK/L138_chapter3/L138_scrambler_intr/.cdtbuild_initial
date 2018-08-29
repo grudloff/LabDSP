@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="L138_scrambler_intr.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.1013920901" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="L138_scrambler_intr" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.366867782" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain.914942799" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.203168088">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1549706621" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts6740.lib"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.586014630" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug.449885998" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1469788579" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.1219402989" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.1342164360" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\omapl138\bsl\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\eXperimenter\L138_support&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.203168088" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.1554617363" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;L138_scrambler_intr.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.1917176309" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;L138_scrambler_intr.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.888132770" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts6740.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\omapl138\bsl\lib\evmomapl138_bsl.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.2092392061" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles.1172493231" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="L138_scrambler_intr" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.1817977290" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain.1709533519" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.2055859844">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.977790637" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts6740.lib"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.2131474098" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease.1398856884" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1667031433" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.1148795144" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.1686187988" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.2055859844" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.302077164" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;L138_scrambler_intr.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.936662278" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;L138_scrambler_intr.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.1830984382" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts6740.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.2017838684" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

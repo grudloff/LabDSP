@@ -1,0 +1,161 @@
+\documentclass[11pt, letterpaper, titlepage]{article}
+\include{Preambulo}
+\include{Scripts}
+\usepackage{fancyvrb}
+\usepackage{varwidth}
+\usepackage{cancel}
+\usepackage[table,xcdraw]{xcolor}
+
+
+\begin{document}
+\maketitle 
+\newpage
+%script para poner imagenes
+%\imagen[0.7]{NewFile2}{\label{}}{Señal original y modulada para T=0.5[ms](20\%) y $\tau$=0.1[ms] con filtro de $f_c$=10[kHz](1er nulo) }
+%--------------------------------------------------------------------------------------------------
+\section*{Parte I}
+\section{Representación Gráfica de Señales Sinusoidales}
+\imagen[0.5]{fig1}{\label{}}{Representaciones señal original y submuestreada}
+
+
+\subsection{} 
+El Software Matlab, dentro de sus alternativas de representación gráfica de datos, nos presenta dos alternativas que nos resultaran útiles, una de ellas es el Plot y la otra Stem. Plot, representa los datos en los instantes indicados por un vector, interpolando linealmente los valores entre los datos. Stem, por otro lado, solo representa las muestras en los instantes dados, con lineas verticales que indican la posición indicada por un vector, y de altura correspondiente al valor del dato.
+\subsection{}
+La cantidad de muestras de los tres gráficos son 31, 31 y 7 respectivamente. Esto se debe a que para los primeros 2 casos se tomaron muestras de 0 a 60 con decimación 2. por lo que se toman 30 muestras más el 0, sumando 31. Para el caso del tercer gráfico, se pide 5 veces menos muestras, y dado a que se tienen 31 muestras, da un valor de 6.2 muestras. Lo cual se traduce en 7 muestras. Esto se logra con decimación 5 veces mayor.
+\subsection{}
+El intervalo [0 60], corresponde a un vector que indica la posición de las muestras. Este puede ser interpretado tiempo, y a falta de una indicación de unidad de medida, se puede asumir que esta en segundos, por lo que ahora el vector de 0 a 60, correspondería a un minuto tomando muestras.
+\subsection{}
+Todas las señales tienen la misma duración, 60[seg] ya que todos los gráficos corresponden a la misma señal, solo que en un caso están representadas de diferente manera y en el otro caso cambia la frecuencia de muestreo. Debido a esto las señales también comparten la frecuencia la cual tiene un valor de 0.026[Hz].
+
+
+
+\section{Muestreo}
+\imagen{fig2}{\label{}}{Señal sinusoidal con distintas frecuencias de muestreo e intervalos de muestreo}
+De la imagen podemos comentar que algunas de las representaciones de la señal tienen dificultades para hacerlo de forma fidedigna. La primera señal logra la representación de manera aceptable. Luego apreciamos la segunda señal, la cual aunque cumple con el criterio de Nyquist, y un filtro ideal podría recuperar la señal, su obtención real no sería la mejor. La tercera señal, que tambien satisface el criterio de Nyquist (justo), tiene el problema de que tomó muestras en los momentos en que la señal pasaba por 0, perdiéndose casi toda la información de la señal. La última de las señales parece representar bien la señal, sin embargo su periodo de muestreo es un poco superior al periodo de la señal original, por lo que da la apariencia de estar representando una señal de menor frecuencia.
+\subsection{}
+La señal original tiene una frecuencia de $1[Hz]$.
+\subsection{}
+Las señales tienen $10, 3, 2, 1$ muestras por periodo respectivamente.
+\subsection{}
+La equivalencia es en cuanto a la señal de origen, i.e, la señal muestreada, sin embargo, al intentar reconstruir estas señales las 4 serán diferentes.
+\subsection{}
+La frecuencia de muestreo Fs en Hertz es el inverso de Ts[s], el periodo de muestreo, lo que corresponde a $10, 3, 2, 0.9[Hz]$, respectivamente. Donde, para aumentar la resolución del muestreo, se debe aumentar la frecuencia de muestreo.
+\subsection{}
+El fenómeno que se observa en la señal lleva el nombre de Aliasing, el cual corresponde al solapamiento de información en la frecuencia, con copias del mismo espectro. Esto se traduce a que en el tiempo se tiene, por ejemplo, señales que representan una frecuencia menor a la original, como es el caso del 4to gráfico de la figura.
+
+
+\section{Generación de Señales}
+\subsection{}
+Queremos observar señales con un máximo de 500[Hz] por lo que por el criterio de nyquist por lo menos debemos tener Fs=2*500[Hz]. Pero elegir exactamente esa frecuencia de muestreo no es conveniente ya que como observamos en el punto anterior es posible hacerlo coincidir solo con los nulos, lo que nos entregaría poca información de la señal. Además si la frecuencia es muy pequeña tendremos una distorsión en la forma de la señal importante ante lo que seria necesario un filtro. Por lo anterior para los siguientes puntos se eligió utilizar Fs=8*500[Hz].
+\imagen[0.6]{fig3}{\label{}}{Señales sinusoidales de frecuencia 50 y 500 [Hz] con Fs=8*500[Hz]}
+De la imagen podemos observar que la señal de 50[Hz] tiene muchas muestras por periodo por lo que se ve muy suavizada y cercana visualmente a la señal original. Por otro lado la señal de 500[Hz] a pesar de que se tienen 8 muestras por periodo con lo que se ve claramente su frecuencia y su forma sinusoidal, también se nota una distorsión importante en su forma respecto a la sinusoidal que esperaríamos ver.
+\subsection{}
+\imagen[0.6]{fig4}{\label{}}{Señales sinusoidales de frecuencia 50 y 500 [Hz] con Fs=8*500[Hz] con desfase de $2\pi$}
+Lo dicho para la imagen del punto anterior se mantiene ante un cambio en fase, no se podría decir lo mismo si la frecuencia de muestreo fuese justo la frecuencia de nyquist, en tal caso el punto anterior la señal de 500[Hz] se verían solo puntos de nulos y para este caso los peaks. El oído no distingue diferencias en fase por lo que el sonido se mantiene igual para ambos puntos.
+\subsection{}
+\imagen[0.5]{fig5}{\label{}}{Suma se sinusoidal de 50 y 500 [Hz]}
+Observando la imagen e evidente que el patrón se repite cada 20[ms] por lo que su frecuencia que es su inverso seria 50[Hz]. Además sabemos que 500[Hz] es 10 veces 50[Hz] por lo que la frecuencia mayor es armónico de la menor, en consecuencia tenemos directamente que la fundamental es 50[Hz].\\
+Para el caso de 200[Hz] y 300[Hz] tenemos que la fundamental sera el máximo común divisor, en este caso 100[Hz].\\
+Para el caso de 200[Hz] y 203[Hz] tenemos que no existe factores en común entre estas frecuencias, por lo que su fundamental sera de 1[Hz].\\
+Para los primeros dos casos se siente que efectivamente la nota que esta siendo reproducida es la misma que la fundamental, para la ultima no se aprecia esto porque la fundamental no esta en el rango de nuestra audición, lo que si podemos apreciar de esta ultima es que el sonido es bastante similar a un phaser.
+
+\subsection{}
+\imagen[0.7]{fig6}{\label{}}{Señal de 500[Hz] con ruido aditivo con distribución uniforme en [-1,1] para distintas frecuencias de muestreo}
+Al aumentar la frecuencia de muestreo también aumenta la frecuencia del ruido, esto debido a que los saltos debido al ruido suceden cada vez en tiempos menores lo que se traduce en frecuencias mayores. El otro cambio que se observa es un aumento en la intensidad del ruido, pero esto es a causa de la percepción sonora de los humanos que no es plana y de hecho tiene un peak en altas frecuencias.
+\newpage
+\subsection{}
+La distorsión que se le da a la señal en este punto es un ruido multiplicativo.
+\imagen[0.6]{fig7}{\label{}}{Señal de 500[Hz] con ruido multiplicativo}
+Se podría notar respecto a esta que no es especialmente notable siendo bastante similar a la del punto anterior ante la frecuencia de muestreo original, e incluso se podría decir que se percibe menos.
+\subsection{}
+En este punto se agrega ruido en fase a la señal sinusoidal.
+\imagen[0.6]{fig8}{\label{}}{Señal de 500[Hz] con ruido en fase}
+La señal resultante es bastante similar a las anteriores señales ruidosas, teniendo mas similitud con la del punto 4.
+\subsection{}
+Como se comentaba en el punto anterior, no se perciben grandes diferencias en los ruido de los puntos anteriores. Lo que si se debe notar es que el ruido multiplicativo tiene una percepción menos molesta que las otras, siendo hasta incluso relajante.
+\section{Generación de Señales Moduladas}
+\subsection{}
+
+\imagen[0.55]{fig9}{\label{}}{Señal AM con modulante de 50[Hz] y portadora de 500[Hz] h=0.5}
+\hspace{3cm}
+\imagen[0.55]{fig10}{\label{}}{Señal AM con modulante de 50[Hz] y portadora de 500[Hz] h=0.8}
+
+
+Podemos apreciar de los gráficos, que al cambiar el indice de modulación cambia la relación entre el valor máximo y mínimo de la señal modulada. Para el primer caso la señal modula hasta un 50\% de la amplitud máxima, mientras que en la segunda figura lo hace hasta el 20\%.
+
+\subsection{}
+\imagen[0.55]{fig11}{\label{}}{Señal FM con modulante de 50[Hz] y portadora de 500[Hz] h=4}
+\subsection{}
+\imagen{fig12}{\label{}}{Gráfico de modulación AM y FM.}
+De esta imagen podemos apreciar dos formas de modulación de una señal en una portadora; la primera, por amplitud y la segunda por frecuencia. Se aprecia que cuando la modulante disminuye en amplitud, eso se traduce en una reducción de amplitud de la portadora-AM- o en una disminución de la frecuencia-FM-, respectivamente. Mientras que un aumento en la amplitud refleja el comportamiento opuesto
+\subsection{}
+En la siguiente tabla se muestra los valores calculados de energía y RMS de las señales ahí señaladas, se eligió calcular lo anterior para todas las señales de la sección 3. Los números y letras posteriores al guion bajo representan de que punto es la señal.
+\imagen[0.65]{EyRMS.pdf}{\label{}}{Tabla de Valores de Energía y amplitud RMS para cada una de las señales.}
+\newpage
+\setcounter{section}{0}
+
+\section*{Parte II}
+\section{}%1
+Debido a la configuración del código, por los canales salen una señal de 500[Hz] y otra de 50[Hz]. Sin embargo no fue posible tomar una foto simultanea de las mediciones ya que el segundo canal estaba teniendo problemas de Hardware.
+
+\section{}%2
+Dentro de el IDE la herramienta de \emph{Expressions Window} nos permite ver los valores que va tomando una variable, mientras el \emph{Graph}, nos dispone estos datos de manera gráfica. A continuación se muestra el uso de estas herramientas para representar 450 puntos de la señal del canal derecho.
+\imagen[1]{window}{\label{}}{\emph{Expressions Window}, mostrando los datos del canal derecho.}
+\imagen[1]{graph}{\label{}}{\emph{Graph}, gráfico de 450 puntos de la señal del canal derecho.}
+\section{}%3
+Para poder modificar la frecuencia de operación del oscilador, es necesario conocer su función de transferencia. Esto, debido a que su implementación en el código esta de manera canónica -para un oscilador tipo biquad-, teniendo para manipular, los coeficientes de esta función de transferencia. Esta, se muestra a continuación:
+$$H(z)=\frac{b_0}{a_0+a_1z^{-1}+a_2z^{-2}}$$
+Luego, en particular para el biquad, se tiene los siguientes valores para los coeficientes:
+$$H(z)=\frac{sin(w_o)}{1-2cos(w_o)z^{-1}+z^{-2}}$$
+Donde $w_o=2\pi\frac{f}{f_s}$ es la frecuencia normalizada entre 0 y $2\pi$. $f_s$ es la frecuencia de muestreo y f la frecuencia de operación del oscilador.\\
+
+Dicho esto, para cumplir el objetivo de la pregunta, debemos calcular los valores de los coeficientes, en base al nuevo f. Siendo ahora f=200[Hz] y $f_s$=16[kHz]. Recalculando $w_o$ queda con un valor de $2\pi\cdot 0.0125[-]$. Luego el valor de los coeficientes es:
+$$b_0=0.0784591,a_0=1,a_1=-1,9938347,a_2=1.$$
+La configuración que faltaría modificar sería para indicar que esta señal, actualmente almacenada en $y[0]$, salga por el canal derecho del codec de audio. Esto se logra asignándole el valor de $y[0]$ a float\_out\_r, ya que esta variable es asignada para el canal derecho del codec.
+
+\imagen[0.7]{200hz}{\label{}}{Señal del canal derecho del codec de audio, $f_s$=16[kHz], f=200[Hz]}
+
+
+
+\section{}%4
+Para esta parte de la experiencia, se utilizo una frecuencia de muestreo de 32[kHz], debido a que con 8[kHz] no se apreciaba el efecto deseado.\\
+
+Tomando como punto de partida los mismos coeficientes anteriores y cambiando la frecuencia de muestreo($f_s$), sería equivalente a pensar que como se debe mantener la relación $w_o$, la frecuencia del oscilador debe aumentar en un factor de dos, de la misma manera que la frecuencia de muestreo. Es por esto, que la señal que se obtuvo es del doble de la frecuencia de la pregunta anterior, teniendo un valor de 400[Hz].
+
+\imagen[0.7]{400hz}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=400[Hz]}
+
+\section{}%5
+Para el desarrollo de estas señales se consideró una frecuencia de muestreo de 32[kHz]. Luego siguiendo el mismo principio de la pregunta 3, se calculan los nuevos valores de los coeficientes ahora considerando un $w_o$ con una frecuencia de 250[Hz] y luego con 350[Hz], y una frecuencia de muestreo de 32[kHz]. Haciendo el calculo, quedarían los siguientes valores:\\
+
+Para 250[Hz]:
+$$b_0=0.04906767, a_0=1, a_1=-1.9975909, a_2=1$$
+
+Para 350[Hz]:
+$$b_0=0.06866826, a_0=1, a_1=-1.9952791, a_2=1$$
+\imagen[0.7]{250hz}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=250[Hz]}
+\imagen[0.7]{350hz}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=350[Hz]}
+
+La ecuación en diferencias que da origen a este oscilador es la siguiente:
+$$y(n)=sin(w_o)u(n)+2cos(w_o)y(n-k)-y(n-2k)$$
+
+Luego para ver si el sistema es BIBO (Bounded Input Bounded Output), se puede analizar la estabilidad. En donde se observaran los polos, y su posición en el plano Z. Luego estos deben tener magnitud menor a 1, de lo contrario indicaría que el sistema es inestable. Sin embargo, este al ser un oscilador, es de esperarse que tenga polos de magnitud 1. Ya que de esta manera generaría oscilaciones periódicas. Luego comprobamos lo anterior viendo que los polos de la función de transferencia se encuentran en $z=cos(wo)\pm jsin(wo)$. Los cuales tienen magnitud unitaria.
+
+\section{} A continuación se muestra la señal modulada en AM con factor de modulación h=1. Como portadora se utilizo una señal de 2[kHz] generada en la LCDK con la función $sinf()$ y como modulante una señal de 200[Hz] generada por el oscilador biquad.
+\imagen[0.7]{AM1}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=350[Hz]}
+Como es de esperar la amplitud de la señal de alta frecuencia es escalada por la señal de baja frecuencia, y como son ambas de amplitud 1, la señal AM alcanzan el valor de la señal modulante en sus peaks. También debemos notar que la frecuencia de las señales coincide con lo que se esperaba.
+\section{}
+En este punto se repite lo realizado en el punto anterior pero se obtiene la señal portadora de forma externa desde un generador de señales.
+\imagen[0.65]{AM2}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=350[Hz]}
+El resultado es el mismo que en el punto anterior sin diferencias notables.
+\section{}
+Se genero una señal FM con una portadora de 2[kHz] generada en la LCDK con la función $cosf()$ y una modulante de 200[Hz] generada con el oscilador biquad. Esto se muestra en la siguiente imagen.
+\imagen[0.65]{FM}{\label{}}{Señal del canal derecho del codec de audio,$f_s$=32[kHz] f=350[Hz]}
+El comportamiento observado es el esperado, con aumentos en frecuencia en los picos de la señal modulante y disminuciones en frecuencia en los valles.
+
+
+
+
+
+
+
+\end{document}

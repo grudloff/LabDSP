@@ -1,0 +1,456 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.2.0                      
+******************************************************************************
+>> Linked Wed May 25 15:47:47 2011
+
+OUTPUT FILE NAME:   <evmomapl138_test_svideo.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 80007cc0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  dsp_l2_ram            11800000   00040000  00000000  00040000  RWIX
+  shared_ram            80000000   00020000  00009df8  00016208  RWIX
+  external_ram          c0000000   08000000  00000000  08000000  RWIX
+  arm_local_ram         ffff0000   00002000  00000000  00002000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    80000000    000082a0     
+                  80000000    00000c20     evmomapl138_bsl.lib : evmomapl138.obj (.text)
+                  80000c20    00000680     rts6740.lib : divd.obj (.text:__divd)
+                  800012a0    00000580                 : _printfi.obj (.text:__getarg_diouxp)
+                  80001820    00000520     evmomapl138_bsl.lib : evmomapl138_vpif.obj (.text)
+                  80001d40    000004e0                         : evmomapl138_i2c_gpio.obj (.text)
+                  80002220    00000480     rts6740.lib : _printfi.obj (.text:__setfield)
+                  800026a0    00000440                 : _printfi.obj (.text:__printfi)
+                  80002ae0    00000380     evmomapl138_bsl.lib : evmomapl138_i2c.obj (.text)
+                  80002e60    00000300     rts6740.lib : fputs.obj (.text:_fputs)
+                  80003160    000002e0                 : _printfi.obj (.text:__pproc_fwp)
+                  80003440    000002e0     evmomapl138_bsl.lib : evmomapl138_videodec.obj (.text)
+                  80003720    000002c0     rts6740.lib : _printfi.obj (.text:__pproc_fge)
+                  800039e0    000002a0                 : _printfi.obj (.text:_ecvt)
+                  80003c80    000002a0                 : _printfi.obj (.text:_fcvt)
+                  80003f20    00000280                 : memory.obj (.text:_free)
+                  800041a0    00000260                 : imath64.obj (.text:__divull)
+                  80004400    00000260                 : _printfi.obj (.text:__pconv_e)
+                  80004660    00000260     test_svideo.obj (.text)
+                  800048c0    00000220     rts6740.lib : _printfi.obj (.text:__pproc_diouxp)
+                  80004ae0    00000220                 : _printfi.obj (.text:__pproc_str)
+                  80004d00    00000200                 : _printfi.obj (.text:__pconv_g)
+                  80004f00    00000200     evmomapl138_bsl.lib : evmomapl138_cdce913.obj (.text)
+                  80005100    000001e0                         : evmomapl138_led.obj (.text)
+                  800052e0    000001e0                         : evmomapl138_timer.obj (.text)
+                  800054c0    000001c0     rts6740.lib : _printfi.obj (.text:__mcpy)
+                  80005680    000001a0                 : imath40.obj (.text:__divul)
+                  80005820    000001a0                 : setvbuf.obj (.text:_setvbuf)
+                  800059c0    00000180                 : trgdrv.obj (.text:_HOSTrename)
+                  80005b40    00000180                 : frcmpyd_div.obj (.text:__frcmpyd_div)
+                  80005cc0    00000180                 : memory.obj (.text:_malloc)
+                  80005e40    00000140                 : _printfi.obj (.text:__pproc_fflags)
+                  80005f80    00000140                 : fputc.obj (.text:_fputc)
+                  800060c0    00000140                 : lowlev.obj (.text:_getdevice)
+                  80006200    00000120                 : fclose.obj (.text:_fclose)
+                  80006320    00000120     evmomapl138_bsl.lib : evmomapl138_videoenc.obj (.text)
+                  80006440    00000100     rts6740.lib : trgdrv.obj (.text:_HOSTlseek)
+                  80006540    00000100                 : autoinit.obj (.text:__auto_init)
+                  80006640    00000100                 : _printfi.obj (.text:__ltostr)
+                  80006740    00000100                 : _io_perm.obj (.text:__wrt_ok)
+                  80006840    000000e0                 : trgdrv.obj (.text:_HOSTopen)
+                  80006920    000000e0                 : atoi.obj (.text:_atoi)
+                  80006a00    000000e0                 : lowlev.obj (.text:_close)
+                  80006ae0    000000e0                 : exit.obj (.text:_exit)
+                  80006bc0    000000e0                 : memset.obj (.text:_memset)
+                  80006ca0    000000c0                 : trgdrv.obj (.text:_HOSTread)
+                  80006d60    000000c0                 : trgdrv.obj (.text:_HOSTunlink)
+                  80006e20    000000c0                 : trgdrv.obj (.text:_HOSTwrite)
+                  80006ee0    000000c0                 : fopen.obj (.text:__cleanup)
+                  80006fa0    000000c0                 : _printfi.obj (.text:__div)
+                  80007060    000000c0                 : divu.obj (.text:__divu)
+                  80007120    000000c0                 : fflush.obj (.text:__doflush)
+                  800071e0    000000c0                 : fseek.obj (.text:_fseek)
+                  800072a0    000000c0                 : lowlev.obj (.text:_lseek)
+                  80007360    000000c0                 : ltoa.obj (.text:_ltoa)
+                  80007420    000000c0                 : lowlev.obj (.text:_write)
+                  800074e0    000000a0                 : trgdrv.obj (.text:_HOSTclose)
+                  80007580    000000a0                 : imath40.obj (.text:__divli)
+                  80007620    000000a0                 : _printfi.obj (.text:__ecpy)
+                  800076c0    000000a0                 : _printfi.obj (.text:__fcpy)
+                  80007760    000000a0                 : fixdli.obj (.text:__fixdli)
+                  80007800    000000a0                 : _printfi.obj (.text:__pconv_f)
+                  800078a0    000000a0                 : cpy_tbl.obj (.text:_copy_in)
+                  80007940    000000a0                 : lowlev.obj (.text:_finddevice)
+                  800079e0    000000a0                 : memcpy64.obj (.text:_memcpy)
+                  80007a80    000000a0                 : memory.obj (.text:_minsert)
+                  80007b20    000000a0                 : memory.obj (.text:_mremove)
+                  80007bc0    00000080                 : fltlid.obj (.text:__fltlid)
+                  80007c40    00000080                 : llshift.obj (.text:__llshl)
+                  80007cc0    00000080                 : boot.obj (.text:_c_int00)
+                  80007d40    00000080                 : printf.obj (.text:_printf)
+                  80007dc0    00000080                 : trgmsg.obj (.text:_readmsg)
+                  80007e40    00000080                 : lowlev.obj (.text:_unlink)
+                  80007ec0    00000080     main_svideo.obj (.text)
+                  80007f40    00000060     rts6740.lib : imath64.obj (.text:__subcull)
+                  80007fa0    00000060                 : memccpy.obj (.text:_memccpy)
+                  80008000    00000060                 : trgmsg.obj (.text:_writemsg)
+                  80008060    00000040                 : isinf.obj (.text:___isinf)
+                  800080a0    00000040                 : _printfi.obj (.text:___isnan)
+                  800080e0    00000040                 : divd.obj (.text:___isnan)
+                  80008120    00000040                 : args_main.obj (.text:__args_main)
+                  80008160    00000040                 : llshift.obj (.text:__llshru)
+                  800081a0    00000040                 : imath40.obj (.text:__remli)
+                  800081e0    00000020                 : negll.obj (.text:__negll)
+                  80008200    00000020                 : _lock.obj (.text:__nop)
+                  80008220    00000020                 : printf.obj (.text:__outc)
+                  80008240    00000020                 : printf.obj (.text:__outs)
+                  80008260    00000020                 : exit.obj (.text:_abort)
+                  80008280    00000020                 : remove.obj (.text:_remove)
+
+.data      0    80000000    00000000     UNINITIALIZED
+
+.stack     0    800082a0    00000800     UNINITIALIZED
+                  800082a0    00000008     rts6740.lib : boot.obj (.stack)
+                  800082a8    000007f8     --HOLE--
+
+.sysmem    0    80008aa0    00000800     UNINITIALIZED
+                  80008aa0    00000008     rts6740.lib : memory.obj (.sysmem)
+                  80008aa8    000007f8     --HOLE--
+
+.const     0    800092a0    00000590     
+                  800092a0    000003b0     test_svideo.obj (.const:.string)
+                  80009650    00000101     rts6740.lib : ctype.obj (.const:__ctypes_)
+                  80009751    00000002                 : fputs.obj (.const:.string)
+                  80009753    00000001     --HOLE-- [fill = 0]
+                  80009754    00000070     main_svideo.obj (.const:.string)
+                  800097c4    00000040     evmomapl138_bsl.lib : evmomapl138.obj (.const:.string)
+                  80009804    00000023     rts6740.lib : _printfi.obj (.const:.string)
+                  80009827    00000001     --HOLE-- [fill = 0]
+                  80009828    00000008                 : divd.obj (.const:_initial_approx$1)
+
+.far       0    80009830    00000350     UNINITIALIZED
+                  80009830    00000194     rts6740.lib : defs.obj (.far)
+                  800099c4    00000004                 : fopen.obj (.far)
+                  800099c8    000000d0                 : trgdrv.obj (.far)
+                  80009a98    000000cc                 : lowlev.obj (.far)
+                  80009b64    0000000c                 : exit.obj (.far)
+                  80009b70    00000008                 : _lock.obj (.far)
+                  80009b78    00000008                 : memory.obj (.far)
+
+.cinit     0    80009b80    00000154     
+                  80009b80    0000005c     rts6740.lib : defs.obj (.cinit)
+                  80009bdc    00000004     --HOLE-- [fill = 0]
+                  80009be0    0000005c                 : lowlev.obj (.cinit)
+                  80009c3c    00000004     --HOLE-- [fill = 0]
+                  80009c40    0000002c                 : exit.obj (.cinit)
+                  80009c6c    00000004     --HOLE-- [fill = 0]
+                  80009c70    0000002c                 : memory.obj (.cinit)
+                  80009c9c    00000004     --HOLE-- [fill = 0]
+                  80009ca0    0000001c                 : _lock.obj (.cinit)
+                  80009cbc    00000004     --HOLE-- [fill = 0]
+                  80009cc0    0000000c                 : fopen.obj (.cinit)
+                  80009ccc    00000004     --HOLE-- [fill = 0]
+                  80009cd0    00000004     (.pad.cinit) [fill = 0]
+
+.cio       0    80009cd4    00000120     UNINITIALIZED
+                  80009cd4    00000120     rts6740.lib : trgmsg.obj (.cio)
+
+.bss       0    80009df4    00000004     UNINITIALIZED
+                  80009df4    00000004     evmomapl138_bsl.lib : evmomapl138_i2c.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+80009df4   $bss
+80009df4   .bss
+80000000   .data
+80000000   .text
+80008260   C$$EXIT
+80008058   C$$IO$$
+80004f00   _CDCE913_init
+80004f38   _CDCE913_readByte
+80004fe8   _CDCE913_setOutput
+80004fa0   _CDCE913_writeByte
+80003440   _CVIDEODEC_init
+80003578   _CVIDEODEC_readRegister
+800035d0   _CVIDEODEC_writeRegister
+800001e8   _EVMOMAPL138_enableDsp
+80000000   _EVMOMAPL138_init
+8000002c   _EVMOMAPL138_initRAM
+800002b0   _EVMOMAPL138_lpscTransition
+80000214   _EVMOMAPL138_pinmuxConfig
+800074e0   _HOSTclose
+80006440   _HOSTlseek
+80006840   _HOSTopen
+80006ca0   _HOSTread
+800059c0   _HOSTrename
+80006d60   _HOSTunlink
+80006e20   _HOSTwrite
+80001e14   _I2CGPIO_getInput
+80001f30   _I2CGPIO_getInputAll
+80001d40   _I2CGPIO_init
+80002040   _I2CGPIO_setOutput
+80002188   _I2CGPIO_setOutputAll
+80002ae0   _I2C_init
+80002bcc   _I2C_read
+80002d28   _I2C_write
+80005100   _LED_init
+8000514c   _LED_isOn
+8000524c   _LED_toggle
+80005204   _LED_turnOff
+800051b4   _LED_turnOn
+800034e0   _SVIDEODEC_init
+80003614   _SVIDEODEC_readRegister
+8000366c   _SVIDEODEC_writeRegister
+80004660   _TEST_sVideo
+800053c4   _USTIMER_delay
+80005484   _USTIMER_get
+800052e0   _USTIMER_init
+80005454   _USTIMER_reset
+80005498   _USTIMER_set
+80000c00   _UTIL_isUIBoardAttached
+80000aa8   _UTIL_printMem
+80006320   _VIDEOENC_init
+80006390   _VIDEOENC_readRegister
+800063e8   _VIDEOENC_writeRegister
+80001820   _VPIF_initReceive
+800019d4   _VPIF_initTransmit
+80009cd4   __CIOBUF_
+80008aa0   __STACK_END
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+00000001   __TI_args_main
+80009b6c   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+80009df4   ___bss__
+ffffffff   ___c_args__
+80009b80   ___cinit__
+80000000   ___data__
+80000000   ___edata__
+80009df8   ___end__
+800082a0   ___etext__
+80008060   ___isinf
+ffffffff   ___pinit__
+80000000   ___text__
+80008120   __args_main
+80006540   __auto_init
+80007060   __c6xabi_divu
+80006ee0   __cleanup
+80009b64   __cleanup_ptr
+80009650   __ctypes_
+80000c20   __divd
+80007580   __divli
+80007060   __divu
+80005680   __divul
+800041a0   __divull
+80007120   __doflush
+80009b68   __dtors_ptr
+80007760   __fixdli
+80007bc0   __fltlid
+80005b40   __frcmpyd_div
+800099c0   __ft_end
+80009830   __ftable
+80007c40   __llshl
+80008160   __llshru
+80009b70   __lock
+800081e0   __negll
+80008200   __nop
+800026a0   __printfi
+800081a0   __remli
+800082a0   __stack
+80007f40   __subcull
+80008aa0   __sys_memory
+80009920   __tmpnams
+80009b74   __unlock
+80006740   __wrt_ok
+80008260   _abort
+80006920   _atoi
+80007cc0   _c_int00
+80006a00   _close
+80000688   _config_pll0
+800008c4   _config_pll1
+800078a0   _copy_in
+80006ae0   _exit
+80006200   _fclose
+80005f80   _fputc
+80002e60   _fputs
+80003f20   _free
+800071e0   _fseek
+800072a0   _lseek
+80007360   _ltoa
+80007ec0   _main
+80005cc0   _malloc
+80007fa0   _memccpy
+800079e0   _memcpy
+80006bc0   _memset
+80007d40   _printf
+80005f80   _putc
+80007dc0   _readmsg
+80008280   _remove
+80005820   _setvbuf
+80007e40   _unlink
+80007420   _write
+80008000   _writemsg
+ffffffff   binit
+80009b80   cinit
+80000000   edata
+80009df8   end
+800082a0   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+80000000   .data
+80000000   .text
+80000000   _EVMOMAPL138_init
+80000000   ___data__
+80000000   ___edata__
+80000000   ___text__
+80000000   edata
+8000002c   _EVMOMAPL138_initRAM
+800001e8   _EVMOMAPL138_enableDsp
+80000214   _EVMOMAPL138_pinmuxConfig
+800002b0   _EVMOMAPL138_lpscTransition
+80000688   _config_pll0
+800008c4   _config_pll1
+80000aa8   _UTIL_printMem
+80000c00   _UTIL_isUIBoardAttached
+80000c20   __divd
+80001820   _VPIF_initReceive
+800019d4   _VPIF_initTransmit
+80001d40   _I2CGPIO_init
+80001e14   _I2CGPIO_getInput
+80001f30   _I2CGPIO_getInputAll
+80002040   _I2CGPIO_setOutput
+80002188   _I2CGPIO_setOutputAll
+800026a0   __printfi
+80002ae0   _I2C_init
+80002bcc   _I2C_read
+80002d28   _I2C_write
+80002e60   _fputs
+80003440   _CVIDEODEC_init
+800034e0   _SVIDEODEC_init
+80003578   _CVIDEODEC_readRegister
+800035d0   _CVIDEODEC_writeRegister
+80003614   _SVIDEODEC_readRegister
+8000366c   _SVIDEODEC_writeRegister
+80003f20   _free
+800041a0   __divull
+80004660   _TEST_sVideo
+80004f00   _CDCE913_init
+80004f38   _CDCE913_readByte
+80004fa0   _CDCE913_writeByte
+80004fe8   _CDCE913_setOutput
+80005100   _LED_init
+8000514c   _LED_isOn
+800051b4   _LED_turnOn
+80005204   _LED_turnOff
+8000524c   _LED_toggle
+800052e0   _USTIMER_init
+800053c4   _USTIMER_delay
+80005454   _USTIMER_reset
+80005484   _USTIMER_get
+80005498   _USTIMER_set
+80005680   __divul
+80005820   _setvbuf
+800059c0   _HOSTrename
+80005b40   __frcmpyd_div
+80005cc0   _malloc
+80005f80   _fputc
+80005f80   _putc
+80006200   _fclose
+80006320   _VIDEOENC_init
+80006390   _VIDEOENC_readRegister
+800063e8   _VIDEOENC_writeRegister
+80006440   _HOSTlseek
+80006540   __auto_init
+80006740   __wrt_ok
+80006840   _HOSTopen
+80006920   _atoi
+80006a00   _close
+80006ae0   _exit
+80006bc0   _memset
+80006ca0   _HOSTread
+80006d60   _HOSTunlink
+80006e20   _HOSTwrite
+80006ee0   __cleanup
+80007060   __c6xabi_divu
+80007060   __divu
+80007120   __doflush
+800071e0   _fseek
+800072a0   _lseek
+80007360   _ltoa
+80007420   _write
+800074e0   _HOSTclose
+80007580   __divli
+80007760   __fixdli
+800078a0   _copy_in
+800079e0   _memcpy
+80007bc0   __fltlid
+80007c40   __llshl
+80007cc0   _c_int00
+80007d40   _printf
+80007dc0   _readmsg
+80007e40   _unlink
+80007ec0   _main
+80007f40   __subcull
+80007fa0   _memccpy
+80008000   _writemsg
+80008058   C$$IO$$
+80008060   ___isinf
+80008120   __args_main
+80008160   __llshru
+800081a0   __remli
+800081e0   __negll
+80008200   __nop
+80008260   C$$EXIT
+80008260   _abort
+80008280   _remove
+800082a0   ___etext__
+800082a0   __stack
+800082a0   etext
+80008aa0   __STACK_END
+80008aa0   __sys_memory
+80009650   __ctypes_
+80009830   __ftable
+80009920   __tmpnams
+800099c0   __ft_end
+80009b64   __cleanup_ptr
+80009b68   __dtors_ptr
+80009b6c   ___TI_enable_exit_profile_output
+80009b70   __lock
+80009b74   __unlock
+80009b80   ___cinit__
+80009b80   cinit
+80009cd4   __CIOBUF_
+80009df4   $bss
+80009df4   .bss
+80009df4   ___bss__
+80009df8   ___end__
+80009df8   end
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[139 symbols]

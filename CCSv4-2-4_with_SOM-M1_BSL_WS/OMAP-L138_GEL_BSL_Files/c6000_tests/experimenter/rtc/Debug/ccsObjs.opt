@@ -1,0 +1,1 @@
+"./src/test_rtc.obj" "./src/main_rtc.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

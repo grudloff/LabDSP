@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="L138_graphicEQ_edma.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.1815114066" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="L138_graphicEQ_edma" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.799056274" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain.938349109" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.88474315">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1849968465" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts6740.lib"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1829626130" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug.1918155563" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1604925544" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.667048231" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.1088000733" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\c674x-dsplib_1_03_00_01\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\omapl138\bsl\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\eXperimenter\L138_support&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.88474315" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.38735643" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;L138_graphicEQ_edma.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.1739858885" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;L138_graphicEQ_edma.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.1042246246" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts6740.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\c674x-dsplib_1_03_00_01\lib\dsplib674x.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\omapl138\bsl\lib\evmomapl138_bsl.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.987489166" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles.346353080" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="L138_graphicEQ_edma" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.1157858525" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain.1334593203" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.1054917593">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.235130441" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts6740.lib"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1721609230" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease.481858639" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1541679745" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.2022977375" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.766782578" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.1054917593" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.1269037105" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;L138_graphicEQ_edma.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.625443395" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;L138_graphicEQ_edma.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.1007783339" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts6740.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.1441418359" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

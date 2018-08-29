@@ -1,0 +1,35 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../linker_dsp.cmd 
+
+C_SRCS += \
+../L138_LCDK_aic3106_init.c \
+../main.c 
+
+C_DEPS += \
+./L138_LCDK_aic3106_init.d \
+./main.d 
+
+OBJS += \
+./L138_LCDK_aic3106_init.obj \
+./main.obj 
+
+OBJS__QUOTED += \
+"L138_LCDK_aic3106_init.obj" \
+"main.obj" 
+
+C_DEPS__QUOTED += \
+"L138_LCDK_aic3106_init.d" \
+"main.d" 
+
+C_SRCS__QUOTED += \
+"../L138_LCDK_aic3106_init.c" \
+"../main.c" 
+
+

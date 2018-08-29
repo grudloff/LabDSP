@@ -1,0 +1,1 @@
+"./vectors_poll.obj" "./L138_loop_poll.obj" "./L138_LCDK_aic3106_init.obj" -l"rts6740.lib" -l"C:\omapl138\bsl\lib\evmomapl138_bsl.lib" "C:/LCDK/L138_support/linker_dsp.cmd" 

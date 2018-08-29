@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="evmomapl138_test_emac_loopback_rmii.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.184382348" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="evmomapl138_test_emac_loopback_rmii" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.1642806276" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain.1145599883" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.1298765558">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1837693092" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=linker_dsp.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.425158313" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug.763166503" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1270855815" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.1994069123" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.758895563" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;../inc/&quot;"/>
+<listOptionValue builtIn="false" value="&quot;../../../../bsl/inc/&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.1298765558" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.373099858" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;evmomapl138_test_emac_loopback_rmii.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.1656765767" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;evmomapl138_test_emac_loopback_rmii.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles.1099855618" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.1929614583" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;../../../../bsl/lib/evmomapl138_bsl.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.1027985079" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+<macros/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="evmomapl138_test_emac_loopback_rmii" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.592941473" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.ReleaseToolchain.88759844" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerRelease.1006218598">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1870436980" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.17" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.291735741" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=linker_dsp.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.1.3"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.compilerRelease.222938443" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DIAG_WARNING.942434448" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.SILICON_VERSION.1824166724" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.SILICON_VERSION" value="6740" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.INCLUDE_PATH.2032865560" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerRelease.1006218598" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.OUTPUT_FILE.842942016" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.OUTPUT_FILE" value="&quot;evmomapl138_test_emac_loopback_rmii.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.MAP_FILE.257104594" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.MAP_FILE" value="&quot;evmomapl138_test_emac_loopback_rmii.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.LIBRARY.776143813" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.SEARCH_PATH.1509967818" superClass="com.ti.ccstudio.buildDefinitions.C6000_6.1.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

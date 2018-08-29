@@ -1,0 +1,1 @@
+"./src/test_lcd_graphics.obj" "./src/main_lcd_graphics.obj" -l"C:\CCS4\1016316A_AM1808_BSL_WS\AM1808 BSL\lib\am1808_bsl.lib" -l"C:\CCS4\1016316A_AM1808_BSL_WS\AM1808 BSL\am1808_rts.lib" "../linker.cmd" 

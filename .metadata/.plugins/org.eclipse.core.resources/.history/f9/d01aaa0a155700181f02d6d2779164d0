@@ -1,0 +1,63 @@
+#include <math.h>
+#include <stdlib.h>
+#include "Complex.h"
+#include "FFT_radix2.h"
+
+void FFT_radix2_rcs(unsigned int* maxIndex, float* maxFFT, float* magFFT, Complex* FFT, Complex* input, Complex* W_N ,unsigned int N)
+{
+    if(N==2){
+        FFT[0]=input[0]+input[1];
+        FFT[1]=input[0]-input[1];
+    }
+
+    Complex even[N/2];
+    Complex odd[N/2];
+
+    for(int i=0;i<N/2;i++){
+        even[i]=input[2*i];
+        odd[i]=input[2*i+1];
+    }
+
+    Complex Even[N/2];
+    Complex Odd[N/2];
+
+    FFT_radix2_rcs(unsigned int* maxIndex, float* maxFFT, float* magFFT,Even,even,W_N ,N/2)
+    FFT_radix2_rcs(unsigned int* maxIndex, float* maxFFT, float* magFFT,Odd,odd,W_N ,N/2)
+
+    for(int k=0;k<N/2;k++){
+        FFT[k]=Xeven[k]+Wn^k*Xodd[k];
+        FFT[k+N/2]=Xeven[k]-Wn^k*Xodd[k];
+    }
+
+
+
+    return
+}
+
+Complex RADIX2_rcs(unsigned int U, unsigned int N, unsigned int k, Complex* W_N,Complex* Even, Complex* Odd)
+{
+	Complex result;
+
+	if(U==0){
+	    c_prod(result,W_N[k],Odd[k])
+	    c_add(result,Even[k],result);
+	}
+	else{
+	    c_prod(result,W_N[k],Odd[k])
+        c_sub(result,Even[k],result);
+	}
+
+	return result;
+
+}
+
+//Complex RADIX2_rcs(unsigned int size, unsigned int k, Complex* W_N, Complex* input, Complex* EO)
+//{
+//    Complex result;
+//
+//    // Codigo a Completar
+//    result.real = 0.;
+//    result.img = 0.;
+//    return result;
+//
+//}

@@ -1,0 +1,1 @@
+"./src/test_spiflash.obj" "./src/main_spiflash.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

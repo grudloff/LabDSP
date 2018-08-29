@@ -1,0 +1,1 @@
+"./src/test_upp.obj" "./src/main_upp.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

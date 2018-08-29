@@ -1,0 +1,69 @@
+#include <math.h>
+#include <stdlib.h>
+#include "Complex.h"
+#include "FFT_radix2.h"
+
+void FFT_radix2_rcs_mag(unsigned int* maxIndex, float* maxFFT, float* magFFT, Complex* FFT,unsigned int N){
+    (*maxIndex)=-1;
+    (*maxFFT)=-1;
+
+    magFFT[0]=c_mag(FFT[0])
+
+    for(int i=1;i<N/2;i++){
+        if((magFFT[i]=2*c_mag(FFT[i]))>maxFFT){
+            maxFFT=magFFT[i];
+            maxIndex=i;
+        }
+    }
+}
+
+
+
+void FFT_radix2_rcs(Complex* FFT, float* input, Complex* W_N ,unsigned int N,unsigned int Nmax){
+
+    if(N==2){
+        FFT[0]=input[0]+input[1];
+        FFT[1]=input[0]-input[1];
+        return
+    }
+
+    float even[N/2];
+    float odd[N/2];
+
+    for(int i=0;i<N/2;i++){
+        even[i]=input[2*i];
+        odd[i]=input[2*i+1];
+    }
+
+    Complex Even[N/2];
+    Complex Odd[N/2];
+
+    FFT_radix2_rcs(Even,even,W_N ,N/2,Nmax);
+    FFT_radix2_rcs(Odd,odd,W_N ,N/2,Nmax);
+
+    //W_N esta generado para N=256, hay que escalarlo con el N de la recursión para obtener W_N_rcs y conseguir el ^k
+
+    for(int k=0;k<N/2;k++){
+        FFT[k]=RADIX2_rcs(0,k*Nmax/N,W_N,Even,Odd);
+        FFT[k+N/2]=RADIX2_rcs(1,k*Nmax/N,W_N,Even,Odd);
+    }
+
+    return
+}
+
+Complex RADIX2_rcs(unsigned int U,unsigned int k, Complex* W_N,Complex* Even, Complex* Odd){
+
+	Complex result;
+
+	if(U==0){
+	    c_prod(result,W_N[k],Odd[k])
+	    c_add(result,Even[k],result);
+	}
+	else{
+	    c_prod(result,W_N[k],Odd[k])
+        c_sub(result,Even[k],result);
+	}
+
+	return result;
+
+}

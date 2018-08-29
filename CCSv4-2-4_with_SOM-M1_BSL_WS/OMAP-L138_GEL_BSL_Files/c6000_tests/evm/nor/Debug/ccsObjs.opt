@@ -1,0 +1,1 @@
+"./src/test_nor.obj" "./src/main_nor.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

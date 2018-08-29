@@ -1,0 +1,3 @@
+-----TI-REX started at Thu Mar 08 2018 15:14:33 GMT-0300 (Hora verano Sudamérica Pacífico)
+TIREX server listening on port 55432
+ deprecated methodOverride: use method-override npm module instead at app.js:540:21

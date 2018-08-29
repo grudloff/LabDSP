@@ -1,0 +1,480 @@
+******************************************************************************
+                  TMS470 Linker PC v4.6.3                      
+******************************************************************************
+>> Linked Thu May 19 16:24:00 2011
+
+OUTPUT FILE NAME:   <AM1808eXpGraphicsLCDTest.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 80007014
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  shared_ram            80000000   00020000  00008881  0001777f  RWIX
+  external_ram          c0000000   08000000  00000000  08000000  RWIX
+  arm_local_ram         ffff0000   00002000  00000000  00002000  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+80000000    80000000    000071dc   000071dc    r-x
+  80000000    80000000    000071dc   000071dc    r-x .text
+800071dc    800071dc    00001295   00000000    rw-
+  800071dc    800071dc    00000800   00000000    rw- .stack
+  800079e0    800079e0    00000800   00000000    rw- .sysmem
+  800081e0    800081e0    00000291   00000000    rw- .bss
+80008474    80008474    000001f0   000001f0    rw-
+  80008474    80008474    000001f0   000001f0    rw- .data
+80008664    80008664    00000224   00000224    r--
+  80008664    80008664    00000184   00000184    r-- .const
+  800087e8    800087e8    000000a0   000000a0    r-- .cinit
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    80000000    000071dc     
+                  80000000    00001660     am1808_rts.lib : _printfi.obj (.text)
+                  80001660    00000cb0     am1808_bsl.lib : evmam1808.obj (.text)
+                  80002310    00000b28     test_lcd_graphics.obj (.text)
+                  80002e38    00000638     am1808_rts.lib : memory.obj (.text)
+                  80003470    000005c8                    : lowlev.obj (.text)
+                  80003a38    00000530     am1808_bsl.lib : evmam1808_i2c_gpio.obj (.text)
+                  80003f68    000004f8     am1808_rts.lib : trgdrv.obj (.text)
+                  80004460    000003ac     am1808_bsl.lib : evmam1808_gpio.obj (.text)
+                  8000480c    000003ac                    : evmam1808_lcd_raster.obj (.text)
+                  80004bb8    000003a8                    : evmam1808_i2c.obj (.text)
+                  80004f60    00000300     am1808_rts.lib : fopen.obj (.text)
+                  80005260    000002b8                    : ull_div32.obj (.text)
+                  80005518    0000023c     am1808_bsl.lib : evmam1808_timer.obj (.text)
+                  80005754    0000021c                    : evmam1808_led.obj (.text)
+                  80005970    00000214     am1808_rts.lib : fd_add32.obj (.text)
+                  80005b84    00000190                    : fd_div32.obj (.text)
+                  80005d14    00000190                    : fputs.obj (.text)
+                  80005ea4    00000180                    : memcpy32.obj (.text)
+                  80006024    00000128                    : fd_mul32.obj (.text)
+                  8000614c    00000118                    : _io_perm.obj (.text)
+                  80006264    00000118                    : i_div32.obj (.text)
+                  8000637c    00000114                    : setvbuf.obj (.text)
+                  80006490    00000110                    : fflush.obj (.text)
+                  800065a0    000000f4                    : u_div32.obj (.text)
+                  80006694    000000d8     main_lcd_graphics.obj (.text)
+                  8000676c    000000d4     am1808_rts.lib : auto_init.obj (.text)
+                  80006840    000000d4                    : fputc.obj (.text)
+                  80006914    000000d0                    : fd_cmp32.obj (.text)
+                  800069e4    000000b0                    : memset32.obj (.text)
+                  80006a94    000000a8                    : trgmsg.obj (.text)
+                  80006b3c    00000098                    : fclose.obj (.text)
+                  80006bd4    00000088                    : cpy_tbl.obj (.text)
+                  80006c5c    00000084                    : atoi.obj (.text)
+                  80006ce0    00000080                    : fseek.obj (.text)
+                  80006d60    00000080                    : ltoa.obj (.text)
+                  80006de0    00000078                    : exit.obj (.text)
+                  80006e58    00000070                    : printf.obj (.text)
+                  80006ec8    0000006c                    : copy_decompress_rle.obj (.text:decompress:rle)
+                  80006f34    0000005c                    : fd_toi32.obj (.text)
+                  80006f90    00000048                    : strncpy.obj (.text)
+                  80006fd8    0000003c                    : i_tofd32.obj (.text)
+                  80007014    00000038                    : boot.obj (.text)
+                  8000704c    0000002c                    : args_main.obj (.text)
+                  80007078    0000002c                    : memchr.obj (.text)
+                  800070a4    0000002c                    : strcmp.obj (.text)
+                  800070d0    00000028                    : memccpy.obj (.text)
+                  800070f8    00000028                    : strchr.obj (.text)
+                  80007120    00000024                    : _lock.obj (.text)
+                  80007144    00000020                    : icall32.obj (.text)
+                  80007164    0000001c                    : strcpy.obj (.text)
+                  80007180    0000001c                    : strlen.obj (.text)
+                  8000719c    0000001c                    : copy_zero_init.obj (.text:decompress:ZI)
+                  800071b8    0000001c                    : copy_decompress_none.obj (.text:decompress:none)
+                  800071d4    00000004                    : remove.obj (.text)
+                  800071d8    00000004                    : tdeh_init.obj (.text)
+
+.stack     0    800071dc    00000800     UNINITIALIZED
+                  800071dc    00000800     --HOLE--
+
+.sysmem    0    800079e0    00000800     UNINITIALIZED
+                  800079e0    00000008     am1808_rts.lib : memory.obj (.sysmem)
+                  800079e8    000007f8     --HOLE--
+
+.bss       0    800081e0    00000291     UNINITIALIZED
+                  800081e0    00000120     am1808_rts.lib : trgmsg.obj (.bss:__CIOBUF_)
+                  80008300    000000c8                    : trgdrv.obj (.bss:result$1)
+                  800083c8    000000a0                    : defs.obj (.bss:_tmpnams)
+                  80008468    00000008                    : trgdrv.obj (.bss)
+                  80008470    00000001     am1808_bsl.lib : evmam1808_i2c.obj (.bss)
+
+.data      0    80008474    000001f0     
+                  80008474    000000f0     am1808_rts.lib : defs.obj (.data:_ftable)
+                  80008564    00000078                    : lowlev.obj (.data:_device)
+                  800085dc    00000050                    : lowlev.obj (.data:_stream)
+                  8000862c    00000010                    : defs.obj (.data)
+                  8000863c    0000000c                    : memory.obj (.data)
+                  80008648    00000008                    : _lock.obj (.data)
+                  80008650    00000008                    : exit.obj (.data)
+                  80008658    00000004                    : fopen.obj (.data)
+                  8000865c    00000004                    : lowlev.obj (.data)
+                  80008660    00000004                    : stkdepth_vars.obj (.data)
+
+.const     0    80008664    00000184     
+                  80008664    00000101     am1808_rts.lib : ctype.obj (.const:_ctypes_)
+                  80008765    00000003     --HOLE-- [fill = 0]
+                  80008768    00000080     am1808_bsl.lib : evmam1808.obj (.const:bitval_u32)
+
+.cinit     0    800087e8    000000a0     
+                  800087e8    0000007c     (.cinit..data.load) [load image, compression = rle]
+                  80008864    0000000c     (__TI_handler_table)
+                  80008870    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  80008878    00000010     (__TI_cinit_table)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 80008878 records: 2, size/record: 8, table size: 16
+	.data: load addr=800087e8, load size=0000007c bytes, run addr=80008474, run size=000001f0 bytes, compression=rle
+	.bss: load addr=80008870, load size=00000008 bytes, run addr=800081e0, run size=00000291 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 80008864 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_zero_init
+	index: 1, handler: __TI_decompress_rle
+	index: 2, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+80006de0   C$$EXIT
+80006adc   C$$IO$$
+80001660   EVMAM1808_init
+800016a0   EVMAM1808_initRAM
+800018ec   EVMAM1808_lpscTransition
+8000186c   EVMAM1808_pinmuxConfig
+800044f4   GPIO_getInput
+80004460   GPIO_setDir
+80004580   GPIO_setOutput
+80004614   GPIO_toggleLoop
+800043ec   HOSTclock
+80004380   HOSTclose
+800042dc   HOSTlseek
+8000424c   HOSTopen
+800041c4   HOSTread
+80004124   HOSTrename
+800040c0   HOSTtime
+80004058   HOSTunlink
+80003fd0   HOSTwrite
+80003b1c   I2CGPIO_getInput
+80003c54   I2CGPIO_getInputAll
+80003a38   I2CGPIO_init
+80003d9c   I2CGPIO_setOutput
+80003eec   I2CGPIO_setOutputAll
+80004bb8   I2C_init
+80004cb8   I2C_read
+80004e0c   I2C_write
+80007144   IND_CALL
+80005754   LED_init
+800057b8   LED_isOn
+800058d0   LED_toggle
+8000588c   LED_turnOff
+80005848   LED_turnOn
+80004920   RASTER_clear
+8000480c   RASTER_init
+800048e8   RASTER_plot
+80002310   TEST_graphicsLcd
+800023f4   TEST_stressTestGraphicsLcd
+80005620   USTIMER_delay
+800056dc   USTIMER_get
+80005518   USTIMER_init
+800056ac   USTIMER_reset
+800056ec   USTIMER_set
+80002210   UTIL_isUIBoardAttached
+800020c8   UTIL_printMem
+800081e0   __CIOBUF_
+800079dc   __STACK_END
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+80008878   __TI_CINIT_Base
+80008888   __TI_CINIT_Limit
+80008864   __TI_Handler_Table_Base
+80008870   __TI_Handler_Table_Limit
+00000001   __TI_args_main
+8000676c   __TI_auto_init
+800071b8   __TI_decompress_none
+80006ec8   __TI_decompress_rle
+800087e8   __TI_static_base__
+8000719c   __TI_zero_init
+80006914   __aeabi_cdcmpeq
+80006914   __aeabi_cdcmple
+80006f34   __aeabi_d2iz
+8000597c   __aeabi_dadd
+80005b84   __aeabi_ddiv
+80006024   __aeabi_dmul
+80005970   __aeabi_dsub
+80006fd8   __aeabi_i2d
+80006264   __aeabi_idivmod
+800069e4   __aeabi_memclr
+800069e4   __aeabi_memclr4
+800069e4   __aeabi_memclr8
+80005ea4   __aeabi_memcpy
+80005ea4   __aeabi_memcpy4
+80005ea4   __aeabi_memcpy8
+800069e8   __aeabi_memset
+800069e8   __aeabi_memset4
+800069e8   __aeabi_memset8
+80008638   __aeabi_stderr
+80008630   __aeabi_stdin
+80008634   __aeabi_stdout
+800065a0   __aeabi_uidivmod
+80005260   __aeabi_uldivmod
+ffffffff   __binit__
+ffffffff   __c_args__
+800071dc   __stack
+800071d8   __tdeh_init
+8000704c   _args_main
+80007014   _c_int00
+800050a0   _cleanup
+80008650   _cleanup_ptr
+80008664   _ctypes_
+80006490   _doflush
+80008654   _dtors_ptr
+8000862c   _ft_end
+80008474   _ftable
+80008648   _lock
+80007138   _nop
+800013d0   _printfi
+800061ec   _rd_ok
+8000712c   _register_lock
+80007120   _register_unlock
+800079e0   _sys_memory
+800083c8   _tmpnams
+8000864c   _unlock
+8000614c   _wrt_ok
+80006de8   abort
+8000395c   add_device
+80006c5c   atoi
+ffffffff   binit
+80008768   bitval_u32
+80003418   calloc
+800038cc   close
+80001c44   config_pll0
+80001eb4   config_pll1
+80006bd4   copy_in
+80006df4   exit
+80006b3c   fclose
+80006514   fflush
+800038c8   find_registered_device
+800051f4   fopen
+80006840   fputc
+80005d14   fputs
+80002ff4   free
+80005104   freopen
+80006ce0   fseek
+80003f68   getenv
+80003850   lseek
+80006d60   ltoa
+80006694   main
+80008660   main_func_sp
+80002f3c   malloc
+800032dc   memalign
+800070d0   memccpy
+80007078   memchr
+80005ea4   memcpy
+800069f4   memset
+80002e38   minit
+80003780   open
+80006e58   printf
+80006840   putc
+80006908   putchar
+80005e70   puts
+8000369c   read
+80006ae4   readmsg
+80003150   realloc
+800071d4   remove
+80003650   remove_device
+800035e4   rename
+8000637c   setvbuf
+800070f8   strchr
+800070a4   strcmp
+80007164   strcpy
+80007180   strlen
+80006f90   strncpy
+8000279c   testPattern
+80002d40   testPatternBlackWhiteSplit
+800035a0   unlink
+80003470   write
+80006a94   writemsg
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+800013d0   _printfi
+80001660   EVMAM1808_init
+800016a0   EVMAM1808_initRAM
+8000186c   EVMAM1808_pinmuxConfig
+800018ec   EVMAM1808_lpscTransition
+80001c44   config_pll0
+80001eb4   config_pll1
+800020c8   UTIL_printMem
+80002210   UTIL_isUIBoardAttached
+80002310   TEST_graphicsLcd
+800023f4   TEST_stressTestGraphicsLcd
+8000279c   testPattern
+80002d40   testPatternBlackWhiteSplit
+80002e38   minit
+80002f3c   malloc
+80002ff4   free
+80003150   realloc
+800032dc   memalign
+80003418   calloc
+80003470   write
+800035a0   unlink
+800035e4   rename
+80003650   remove_device
+8000369c   read
+80003780   open
+80003850   lseek
+800038c8   find_registered_device
+800038cc   close
+8000395c   add_device
+80003a38   I2CGPIO_init
+80003b1c   I2CGPIO_getInput
+80003c54   I2CGPIO_getInputAll
+80003d9c   I2CGPIO_setOutput
+80003eec   I2CGPIO_setOutputAll
+80003f68   getenv
+80003fd0   HOSTwrite
+80004058   HOSTunlink
+800040c0   HOSTtime
+80004124   HOSTrename
+800041c4   HOSTread
+8000424c   HOSTopen
+800042dc   HOSTlseek
+80004380   HOSTclose
+800043ec   HOSTclock
+80004460   GPIO_setDir
+800044f4   GPIO_getInput
+80004580   GPIO_setOutput
+80004614   GPIO_toggleLoop
+8000480c   RASTER_init
+800048e8   RASTER_plot
+80004920   RASTER_clear
+80004bb8   I2C_init
+80004cb8   I2C_read
+80004e0c   I2C_write
+800050a0   _cleanup
+80005104   freopen
+800051f4   fopen
+80005260   __aeabi_uldivmod
+80005518   USTIMER_init
+80005620   USTIMER_delay
+800056ac   USTIMER_reset
+800056dc   USTIMER_get
+800056ec   USTIMER_set
+80005754   LED_init
+800057b8   LED_isOn
+80005848   LED_turnOn
+8000588c   LED_turnOff
+800058d0   LED_toggle
+80005970   __aeabi_dsub
+8000597c   __aeabi_dadd
+80005b84   __aeabi_ddiv
+80005d14   fputs
+80005e70   puts
+80005ea4   __aeabi_memcpy
+80005ea4   __aeabi_memcpy4
+80005ea4   __aeabi_memcpy8
+80005ea4   memcpy
+80006024   __aeabi_dmul
+8000614c   _wrt_ok
+800061ec   _rd_ok
+80006264   __aeabi_idivmod
+8000637c   setvbuf
+80006490   _doflush
+80006514   fflush
+800065a0   __aeabi_uidivmod
+80006694   main
+8000676c   __TI_auto_init
+80006840   fputc
+80006840   putc
+80006908   putchar
+80006914   __aeabi_cdcmpeq
+80006914   __aeabi_cdcmple
+800069e4   __aeabi_memclr
+800069e4   __aeabi_memclr4
+800069e4   __aeabi_memclr8
+800069e8   __aeabi_memset
+800069e8   __aeabi_memset4
+800069e8   __aeabi_memset8
+800069f4   memset
+80006a94   writemsg
+80006adc   C$$IO$$
+80006ae4   readmsg
+80006b3c   fclose
+80006bd4   copy_in
+80006c5c   atoi
+80006ce0   fseek
+80006d60   ltoa
+80006de0   C$$EXIT
+80006de8   abort
+80006df4   exit
+80006e58   printf
+80006ec8   __TI_decompress_rle
+80006f34   __aeabi_d2iz
+80006f90   strncpy
+80006fd8   __aeabi_i2d
+80007014   _c_int00
+8000704c   _args_main
+80007078   memchr
+800070a4   strcmp
+800070d0   memccpy
+800070f8   strchr
+80007120   _register_unlock
+8000712c   _register_lock
+80007138   _nop
+80007144   IND_CALL
+80007164   strcpy
+80007180   strlen
+8000719c   __TI_zero_init
+800071b8   __TI_decompress_none
+800071d4   remove
+800071d8   __tdeh_init
+800071dc   __stack
+800079dc   __STACK_END
+800079e0   _sys_memory
+800081e0   __CIOBUF_
+800083c8   _tmpnams
+80008474   _ftable
+8000862c   _ft_end
+80008630   __aeabi_stdin
+80008634   __aeabi_stdout
+80008638   __aeabi_stderr
+80008648   _lock
+8000864c   _unlock
+80008650   _cleanup_ptr
+80008654   _dtors_ptr
+80008660   main_func_sp
+80008664   _ctypes_
+80008768   bitval_u32
+800087e8   __TI_static_base__
+80008864   __TI_Handler_Table_Base
+80008870   __TI_Handler_Table_Limit
+80008878   __TI_CINIT_Base
+80008888   __TI_CINIT_Limit
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[291 symbols]

@@ -1,0 +1,85 @@
+// FFT_recursive.c - RealTime radix-2 recursive implementation
+// by Manuel Diaz Cadiz
+#include "DSK6713_AIC23.h"
+#include "dsk6713_dip.h"
+#include "dsk6713_led.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "complex.h"
+#include "FFT_radix2.h" 
+
+/*only to avoid these annoying implicit declaration warnings*/
+/*-----------------------------------------------*/
+short  distortion(int,float,float*,float,int);
+void   c6713_dsk_init();
+void   comm_poll();
+void   comm_intr();
+void   output_sample(int);
+void   output_left_sample(short);
+void   output_right_sample(short);
+Uint32 input_sample();
+short  input_left_sample();
+short  input_right_sample();
+/*-----------------------------------------------*/
+#define DSK6713_AIC23_INPUT_MIC  0x0015
+#define DSK6713_AIC23_INPUT_LINE 0x0011
+#define falarm  1000.0
+#define fsample 8000.0
+#define frame   256 // 2^b
+
+Uint32  fs          = DSK6713_AIC23_FREQ_8KHZ;	  //set sampling rate
+Uint16  inputsource = DSK6713_AIC23_INPUT_LINE;   //select input
+
+const float PI       = 3.14159265358979f; //PI value
+const float ratio    = 5.011;			  //14 [db] below of fundamental, app.
+const unsigned int N = frame; 			  //num. points of frame and FFT
+
+unsigned int index   = 0;     //input frame index
+
+Complex W_N[frame]; //W_N[k] factors, lookup table
+
+float     data[frame]; // real data     buffer
+float    alarm[frame]; // alarm signal  buffer
+Complex  input[frame]; // complex input buffer (don't need reverse)
+Complex    FFT[frame]; // FFT result    buffer
+float   absFFT[frame]; // FFT magnitude buffer
+
+float maxFFT=0;
+unsigned int maxIndex=0;
+
+interrupt void c_int11() //interrupt service routine
+{
+	//input circular buffer
+	data[index] = (float)input_left_sample();
+	
+	// Codigo a Completar
+
+	//set next index
+	index = (index+1)%N;
+	output_sample((short)(data[index]));
+
+}
+
+void main()
+{
+	//init. lookup tables
+	unsigned int i;
+	for(i=0;i<N;i++){
+		W_N[i].real = cos(2*PI*i/((float) N));
+		W_N[i].img  =-sin(2*PI*i/((float) N));
+		alarm[i]    = 32767.0*cos(2*PI*i*falarm/fsample);
+		data[i]     = 0.0;
+	}
+	//init. interrupt service
+	comm_intr();
+	while(1);
+}
+
+short distortion(int maxIndex,float maxFFT,float *absFFT,float ratio,int size)
+{
+	
+	// Codigo a Completar
+	return 1;
+}

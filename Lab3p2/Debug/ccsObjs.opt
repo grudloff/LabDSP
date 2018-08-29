@@ -1,0 +1,1 @@
+"./L138_LCDK_aic3106_init.obj" "./L3p3_2.obj" "./dsp_lab_utils.obj" "./vectors_poll.obj" "../linker_dsp.cmd" -llibc.a -l"C:/Users/gabriel/Desktop/Lab DSP/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 

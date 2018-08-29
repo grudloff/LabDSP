@@ -1,0 +1,77 @@
+OMAP-L138 GEL, CCS Setup, & BSL Files                1017292B_Release_Notes.txt
+-------------------------------------------------------------------------------
+
+Version:   2.3
+Hardware:  OMAP-L138
+Date:      04/08/2011
+
+-------------------------------------------------------------------------------
+
+This ZIP file contains the GEL, CCS setup, and BSL files for the OMAP-L138 
+SOM-M1.
+
+---------------------------
+Table of Contents
+---------------------------
+1 Installation Instructions
+2 History
+3 Known Issues
+---------------------------
+
+-------------------------------------------------------------------------------
+1) Installation Instructions
+----------------------------
+
+The installation process involves copying the contents of this ZIP file to 
+the development PC where Code Composer Studio (CCS) has already been installed. 
+CCSv4.2 permits the BSL and GEL files to be placed into any folder. The 
+following steps describe how to import these files into the CCS v4.2 
+environment.
+
+ 1. Unzip BSL, GEL, and test files into a directory of your choice
+ 2. Open CCSv4.2 and select a workspace of your choice
+ 3. Import BSL project
+     a. In the menu toolbar, select Project > Import Existing CCS/CCE Eclipse 
+        Project
+     b. Navigate to directory where you unzipped files and select the BSL 
+        project
+     c. <unzip_dir>\omapl138\bsl\
+ 4. Import desired test project (can repeat as necessary to import any or all 
+    test projects)
+     a. In the menu toolbar, select Project > Import Existing CCS/CCE Eclipse 
+        project
+     b. Navigate to directory where you unzipped files and select a test 
+        project
+     c. <unzip_dir>\omapl138\tests\experimenter\led_dip
+     Note: CCSv4.2 has fixed links in the makefile.exe, so the projects must be
+           imported individually. (CCSv3.3 allowed the entire test suite to be 
+           imported together.)
+ 5. Build all projects in workspace
+     a. In the menu toolbar, select menu Project > Rebuild All
+ 6. Debug
+     a. Right-click the evmomapl138_test_led_dip project from C/C++ Projects 
+        window and select Debug As > 1 Debug Session
+
+-------------------------------------------------------------------------------
+2) History
+----------
+
+Version 2.3
+--) Updated for CCSv4.2.  All folders begin with AM1808 are the ARM projects.  These 
+    were renamed to ARM, but the project folders were not changed.
+
+Version 1.1
+--) Updated GEL files for lower power consumption
+--) Reset RTC osc prior to setting other registers
+
+Version 1.0
+--) Initial release
+
+-------------------------------------------------------------------------------
+3) Known Issues
+---------------
+
+--) None
+
+-------------------------------------------------------------------------------
+Copyright (c) 2011 Logic PD, Inc.                               www.logicpd.com

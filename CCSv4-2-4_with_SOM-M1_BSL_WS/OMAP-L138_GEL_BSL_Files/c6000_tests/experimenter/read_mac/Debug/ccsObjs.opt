@@ -1,0 +1,1 @@
+"./src/test_read_mac.obj" "./src/main_read_mac.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

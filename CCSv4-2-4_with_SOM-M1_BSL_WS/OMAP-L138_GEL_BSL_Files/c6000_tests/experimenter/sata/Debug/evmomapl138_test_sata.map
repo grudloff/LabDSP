@@ -1,0 +1,684 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.2.0                      
+******************************************************************************
+>> Linked Wed May 25 15:45:38 2011
+
+OUTPUT FILE NAME:   <evmomapl138_test_sata.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 8000a480
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  dsp_l2_ram            11800000   00040000  00000000  00040000  RWIX
+  shared_ram            80000000   00020000  0000d910  000126f0  RWIX
+  external_ram          c0000000   08000000  00000000  08000000  RWIX
+  arm_local_ram         ffff0000   00002000  00000000  00002000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    80000000    0000aa60     
+                  80000000    000030e0     sata_utilities.obj (.text)
+                  800030e0    00000c20     evmomapl138_bsl.lib : evmomapl138.obj (.text)
+                  80003d00    00000680     rts6740.lib : divd.obj (.text:__divd)
+                  80004380    00000580                 : _printfi.obj (.text:__getarg_diouxp)
+                  80004900    000004e0     evmomapl138_bsl.lib : evmomapl138_i2c_gpio.obj (.text)
+                  80004de0    00000480     rts6740.lib : _printfi.obj (.text:__setfield)
+                  80005260    00000440                 : _printfi.obj (.text:__printfi)
+                  800056a0    00000380     evmomapl138_bsl.lib : evmomapl138_gpio.obj (.text)
+                  80005a20    00000380                         : evmomapl138_i2c.obj (.text)
+                  80005da0    00000300     rts6740.lib : fputs.obj (.text:_fputs)
+                  800060a0    000002e0                 : _printfi.obj (.text:__pproc_fwp)
+                  80006380    000002c0                 : _printfi.obj (.text:__pproc_fge)
+                  80006640    000002c0     test_sata.obj (.text)
+                  80006900    000002a0     rts6740.lib : _printfi.obj (.text:_ecvt)
+                  80006ba0    000002a0                 : _printfi.obj (.text:_fcvt)
+                  80006e40    00000280                 : memory.obj (.text:_free)
+                  800070c0    00000260                 : imath64.obj (.text:__divull)
+                  80007320    00000260                 : _printfi.obj (.text:__pconv_e)
+                  80007580    00000220                 : _printfi.obj (.text:__pproc_diouxp)
+                  800077a0    00000220                 : _printfi.obj (.text:__pproc_str)
+                  800079c0    00000200                 : _printfi.obj (.text:__pconv_g)
+                  80007bc0    000001e0     evmomapl138_bsl.lib : evmomapl138_timer.obj (.text)
+                  80007da0    000001c0     rts6740.lib : _printfi.obj (.text:__mcpy)
+                  80007f60    000001a0                 : imath40.obj (.text:__divul)
+                  80008100    000001a0                 : setvbuf.obj (.text:_setvbuf)
+                  800082a0    00000180                 : trgdrv.obj (.text:_HOSTrename)
+                  80008420    00000180                 : frcmpyd_div.obj (.text:__frcmpyd_div)
+                  800085a0    00000180                 : memory.obj (.text:_malloc)
+                  80008720    00000140                 : _printfi.obj (.text:__pproc_fflags)
+                  80008860    00000140                 : fputc.obj (.text:_fputc)
+                  800089a0    00000140                 : lowlev.obj (.text:_getdevice)
+                  80008ae0    00000120                 : fclose.obj (.text:_fclose)
+                  80008c00    00000100                 : trgdrv.obj (.text:_HOSTlseek)
+                  80008d00    00000100                 : autoinit.obj (.text:__auto_init)
+                  80008e00    00000100                 : _printfi.obj (.text:__ltostr)
+                  80008f00    00000100                 : _io_perm.obj (.text:__wrt_ok)
+                  80009000    000000e0                 : trgdrv.obj (.text:_HOSTopen)
+                  800090e0    000000e0                 : atoi.obj (.text:_atoi)
+                  800091c0    000000e0                 : lowlev.obj (.text:_close)
+                  800092a0    000000e0                 : exit.obj (.text:_exit)
+                  80009380    000000e0                 : memset.obj (.text:_memset)
+                  80009460    000000c0                 : trgdrv.obj (.text:_HOSTread)
+                  80009520    000000c0                 : trgdrv.obj (.text:_HOSTunlink)
+                  800095e0    000000c0                 : trgdrv.obj (.text:_HOSTwrite)
+                  800096a0    000000c0                 : fopen.obj (.text:__cleanup)
+                  80009760    000000c0                 : _printfi.obj (.text:__div)
+                  80009820    000000c0                 : divu.obj (.text:__divu)
+                  800098e0    000000c0                 : fflush.obj (.text:__doflush)
+                  800099a0    000000c0                 : fseek.obj (.text:_fseek)
+                  80009a60    000000c0                 : lowlev.obj (.text:_lseek)
+                  80009b20    000000c0                 : ltoa.obj (.text:_ltoa)
+                  80009be0    000000c0                 : lowlev.obj (.text:_write)
+                  80009ca0    000000a0                 : trgdrv.obj (.text:_HOSTclose)
+                  80009d40    000000a0                 : imath40.obj (.text:__divli)
+                  80009de0    000000a0                 : _printfi.obj (.text:__ecpy)
+                  80009e80    000000a0                 : _printfi.obj (.text:__fcpy)
+                  80009f20    000000a0                 : fixdli.obj (.text:__fixdli)
+                  80009fc0    000000a0                 : _printfi.obj (.text:__pconv_f)
+                  8000a060    000000a0                 : cpy_tbl.obj (.text:_copy_in)
+                  8000a100    000000a0                 : lowlev.obj (.text:_finddevice)
+                  8000a1a0    000000a0                 : memcpy64.obj (.text:_memcpy)
+                  8000a240    000000a0                 : memory.obj (.text:_minsert)
+                  8000a2e0    000000a0                 : memory.obj (.text:_mremove)
+                  8000a380    00000080                 : fltlid.obj (.text:__fltlid)
+                  8000a400    00000080                 : llshift.obj (.text:__llshl)
+                  8000a480    00000080                 : boot.obj (.text:_c_int00)
+                  8000a500    00000080                 : printf.obj (.text:_printf)
+                  8000a580    00000080                 : trgmsg.obj (.text:_readmsg)
+                  8000a600    00000080                 : lowlev.obj (.text:_unlink)
+                  8000a680    00000080     main_sata.obj (.text)
+                  8000a700    00000060     rts6740.lib : imath64.obj (.text:__subcull)
+                  8000a760    00000060                 : memccpy.obj (.text:_memccpy)
+                  8000a7c0    00000060                 : trgmsg.obj (.text:_writemsg)
+                  8000a820    00000040                 : isinf.obj (.text:___isinf)
+                  8000a860    00000040                 : _printfi.obj (.text:___isnan)
+                  8000a8a0    00000040                 : divd.obj (.text:___isnan)
+                  8000a8e0    00000040                 : args_main.obj (.text:__args_main)
+                  8000a920    00000040                 : llshift.obj (.text:__llshru)
+                  8000a960    00000040                 : imath40.obj (.text:__remli)
+                  8000a9a0    00000020                 : negll.obj (.text:__negll)
+                  8000a9c0    00000020                 : _lock.obj (.text:__nop)
+                  8000a9e0    00000020                 : printf.obj (.text:__outc)
+                  8000aa00    00000020                 : printf.obj (.text:__outs)
+                  8000aa20    00000020                 : exit.obj (.text:_abort)
+                  8000aa40    00000020                 : remove.obj (.text:_remove)
+
+.data      0    80000000    00000000     UNINITIALIZED
+
+.cio       0    8000aa60    00000120     UNINITIALIZED
+                  8000aa60    00000120     rts6740.lib : trgmsg.obj (.cio)
+
+.switch    0    8000ab80    00000044     
+                  8000ab80    00000024     evmomapl138_bsl.lib : evmomapl138_gpio.obj (.switch:_getRegisterBankAndBit)
+                  8000aba4    00000010     sata_utilities.obj (.switch:_detHBApwrTransSupport)
+                  8000abb4    00000010     sata_utilities.obj (.switch:_detPwrMgmtSupport)
+
+.far       0    8000ac00    000014a8     UNINITIALIZED
+                  8000ac00    00001154     sata_utilities.obj (.far)
+                  8000bd54    00000004     rts6740.lib : fopen.obj (.far)
+                  8000bd58    00000194                 : defs.obj (.far)
+                  8000beec    00000004     --HOLE--
+                  8000bef0    000000d0                 : trgdrv.obj (.far)
+                  8000bfc0    000000cc                 : lowlev.obj (.far)
+                  8000c08c    0000000c                 : exit.obj (.far)
+                  8000c098    00000008                 : _lock.obj (.far)
+                  8000c0a0    00000008                 : memory.obj (.far)
+
+.stack     0    8000c0a8    00000800     UNINITIALIZED
+                  8000c0a8    00000008     rts6740.lib : boot.obj (.stack)
+                  8000c0b0    000007f8     --HOLE--
+
+.sysmem    0    8000c8a8    00000800     UNINITIALIZED
+                  8000c8a8    00000008     rts6740.lib : memory.obj (.sysmem)
+                  8000c8b0    000007f8     --HOLE--
+
+.const     0    8000d0a8    00000598     
+                  8000d0a8    00000308     test_sata.obj (.const:.string)
+                  8000d3b0    00000101     rts6740.lib : ctype.obj (.const:__ctypes_)
+                  8000d4b1    00000002                 : fputs.obj (.const:.string)
+                  8000d4b3    00000001     --HOLE-- [fill = 0]
+                  8000d4b4    00000098     main_sata.obj (.const:.string)
+                  8000d54c    00000004     --HOLE-- [fill = 0]
+                  8000d550    00000080     evmomapl138_bsl.lib : evmomapl138.obj (.const:_bitval_u32)
+                  8000d5d0    00000040                         : evmomapl138.obj (.const:.string)
+                  8000d610    00000023     rts6740.lib : _printfi.obj (.const:.string)
+                  8000d633    00000005     --HOLE-- [fill = 0]
+                  8000d638    00000008                 : divd.obj (.const:_initial_approx$1)
+
+.cinit     0    8000d640    00000284     
+                  8000d640    0000011c     sata_utilities.obj (.cinit)
+                  8000d75c    00000004     --HOLE-- [fill = 0]
+                  8000d760    0000005c     rts6740.lib : defs.obj (.cinit)
+                  8000d7bc    00000004     --HOLE-- [fill = 0]
+                  8000d7c0    0000005c                 : lowlev.obj (.cinit)
+                  8000d81c    00000004     --HOLE-- [fill = 0]
+                  8000d820    0000002c                 : exit.obj (.cinit)
+                  8000d84c    00000004     --HOLE-- [fill = 0]
+                  8000d850    0000002c                 : memory.obj (.cinit)
+                  8000d87c    00000004     --HOLE-- [fill = 0]
+                  8000d880    0000001c                 : _lock.obj (.cinit)
+                  8000d89c    00000004     --HOLE-- [fill = 0]
+                  8000d8a0    0000000c                 : fopen.obj (.cinit)
+                  8000d8ac    00000004     --HOLE-- [fill = 0]
+                  8000d8b0    0000000c     test_sata.obj (.cinit)
+                  8000d8bc    00000004     --HOLE-- [fill = 0]
+                  8000d8c0    00000004     (.pad.cinit) [fill = 0]
+
+.bss       0    8000d8c4    00000088     UNINITIALIZED
+                  8000d8c4    0000007c     sata_utilities.obj (.bss)
+                  8000d940    00000008     test_sata.obj (.bss)
+                  8000d948    00000004     evmomapl138_bsl.lib : evmomapl138_i2c.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+8000d8c4   $bss
+8000d8c4   .bss
+80000000   .data
+80000000   .text
+8000aa20   C$$EXIT
+8000a818   C$$IO$$
+8000ac00   _CmdLists
+8000b000   _CmdTable
+8000d8c8   _Dev28bitLbaAddress
+800032c8   _EVMOMAPL138_enableDsp
+800030e0   _EVMOMAPL138_init
+8000310c   _EVMOMAPL138_initRAM
+80003390   _EVMOMAPL138_lpscTransition
+800032f4   _EVMOMAPL138_pinmuxConfig
+80005718   _GPIO_getInput
+800056a0   _GPIO_setDir
+8000578c   _GPIO_setOutput
+8000580c   _GPIO_toggleLoop
+80009ca0   _HOSTclose
+80008c00   _HOSTlseek
+80009000   _HOSTopen
+80009460   _HOSTread
+800082a0   _HOSTrename
+80009520   _HOSTunlink
+800095e0   _HOSTwrite
+800049d4   _I2CGPIO_getInput
+80004af0   _I2CGPIO_getInputAll
+80004900   _I2CGPIO_init
+80004c00   _I2CGPIO_setOutput
+80004d48   _I2CGPIO_setOutputAll
+80005a20   _I2C_init
+80005b0c   _I2C_read
+80005c68   _I2C_write
+8000d900   _IdDevData
+8000d8e0   _PioCmd
+8000bc00   _RcvFis
+8000678c   _SATA_init
+80006640   _TEST_sata
+80007ca4   _USTIMER_delay
+80007d64   _USTIMER_get
+80007bc0   _USTIMER_init
+80007d34   _USTIMER_reset
+80007d78   _USTIMER_set
+80003ce0   _UTIL_isUIBoardAttached
+80003b88   _UTIL_printMem
+8000aa60   __CIOBUF_
+8000c8a8   __STACK_END
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+00000001   __TI_args_main
+8000c094   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+8000d8c4   ___bss__
+ffffffff   ___c_args__
+8000d640   ___cinit__
+80000000   ___data__
+80000000   ___edata__
+8000d94c   ___end__
+8000aa60   ___etext__
+8000a820   ___isinf
+ffffffff   ___pinit__
+80000000   ___text__
+8000a8e0   __args_main
+80008d00   __auto_init
+80009820   __c6xabi_divu
+800096a0   __cleanup
+8000c08c   __cleanup_ptr
+8000d3b0   __ctypes_
+80003d00   __divd
+80009d40   __divli
+80009820   __divu
+80007f60   __divul
+800070c0   __divull
+800098e0   __doflush
+8000c090   __dtors_ptr
+80009f20   __fixdli
+8000a380   __fltlid
+80008420   __frcmpyd_div
+8000bee8   __ft_end
+8000bd58   __ftable
+8000a400   __llshl
+8000a920   __llshru
+8000c098   __lock
+8000a9a0   __negll
+8000a9c0   __nop
+80005260   __printfi
+8000a960   __remli
+8000c0a8   __stack
+8000a700   __subcull
+8000c8a8   __sys_memory
+8000be48   __tmpnams
+8000c09c   __unlock
+80008f00   __wrt_ok
+8000aa20   _abort
+800002c0   _associateMem2HBA
+80002580   _associateSysMem2Hba
+800023ec   _associtateCmdSlotWithCmdTable
+80002440   _associtateCmdTableWithPrds
+800090e0   _atoi
+8000d550   _bitval_u32
+800010f4   _buildCmdFis
+8000a480   _c_int00
+80002eec   _captureDeviceState
+80001bc4   _cfgDmaSetting
+80002ba4   _cfgHBAlinkPwrTransState
+80002d40   _cfgHbaPwrTrans
+80001be4   _chceckSysMemorySize
+800022c8   _clearCmdList
+80000818   _clearCmdTableAndDmaBuff
+800022f8   _clearCmdTables
+800023c8   _clearDmaBuffers
+80000780   _clearError
+800022e4   _clearIndividualCmdList
+80002374   _clearIndividualCmdTable
+800006f4   _clearIntOrErrorDiag
+80000890   _clearRcvFis
+800022b4   _clearSystemMemory
+800091c0   _close
+8000d914   _cmdListRdPrdCnt
+8000d910   _cmdListWrPrdCnt
+8000d8e2   _cmdSlot2Use
+80001c58   _compMemContent
+80003768   _config_pll0
+800039a4   _config_pll1
+8000a060   _copy_in
+8000d93c   _debugP0CIreg
+8000bd28   _debugP0sctl
+8000bd40   _debugP0stat
+8000d938   _debugStat
+80002ce4   _detHBApwrTransSupport
+80002b70   _detHostPwrMgmtStateCfg
+80002b0c   _detPwrMgmtSupport
+80001bb0   _disableCCCint
+80001ba0   _eanbleCCCint
+80002c98   _enableDisableHBAlinkPwrMgmt
+80000624   _enableDisableInt
+800003f8   _enableRcvFis
+800092a0   _exit
+80002f94   _exitHostPwrDwn
+80008ae0   _fclose
+80008860   _fputc
+80005da0   _fputs
+80006e40   _free
+800099a0   _fseek
+80001254   _getCmdFis
+80001374   _getDmaSetupFis
+800013f0   _getPioSetupFis
+800014e0   _getRegDev2HostFis
+80000e20   _getRegStatus
+800015b4   _getSetDevBitsFis
+80001628   _getUnkownFis
+8000d92c   _hbaPwrState
+8000d8f0   _hostPwrMgmtCfg
+8000216c   _initBaseAddresses
+80001b2c   _initCCCint
+80002530   _initIntAndClearFlags
+800007b0   _initMemory
+8000250c   _initPhyAndDmaPars
+80001af4   _initTimer1ms
+8000d8e8   _intHandlingMethod
+8000d8e4   _intIsrCnt
+8000d8e6   _intIsrFlag
+8000d8f4   _intSpeed
+800008ec   _invokeHBAReset
+80001f40   _invokeIdentifyDevCmd
+80000930   _invokePortReset
+80002084   _invokeSetFeatureCmd
+800025d4   _invokeSoftReset
+8000d934   _lineSpeedNegotiated
+80009a60   _lseek
+80009b20   _ltoa
+8000a680   _main
+800085a0   _malloc
+8000a760   _memccpy
+8000a1a0   _memcpy
+80009380   _memset
+80001040   _modifyCfisEntries4NCQ
+8000bca4   _myCmdFis
+8000bcb4   _myDsFis
+8000bcc8   _myPsFis
+8000bcd4   _myRegFis
+8000bcdd   _mySdbFis
+8000bce4   _myUnknownFis
+8000d90c   _p0sctlHighp0sstsLow
+8000d8fc   _pIdDevData
+8000d908   _pIdDevPwrData
+80002e2c   _parseDeviceCapabilityNdetermineLowPowerSupport
+800021a4   _performFirmwareInit
+8000018c   _placeHbaInIdle
+80002fb0   _pllInit
+8000b400   _prdTableDataBuff
+8000a500   _printf
+8000d8c4   _progStatus
+8000d944   _pscRegs
+80008860   _putc
+8000d8ec   _pwrMgmtCap
+8000a580   _readmsg
+8000aa40   _remove
+80002bec   _reqPwrTransState
+8000d902   _sataCapabilities
+8000d906   _sataFeaturesEnabled
+8000d904   _sataFeaturesSupported
+800025a0   _sataIsr
+8000d8cc   _sataRegs
+80006804   _sata_DoTest
+80000000   _sata_init_and_spin_up
+800005cc   _setSataSpeed
+80000e40   _setupCfisEntriesForDataRdWr
+80001e1c   _setupCfisEntriesForSetFeature
+80001cd4   _setupCfisEntriesForSetFeatureAll
+800029b8   _setupCfisEntriesForSwReset
+80008100   _setvbuf
+80000440   _spinUpDeviceAndWaitForInitToComplete
+80000bd4   _startCmdListProcessing
+80000dd0   _submitBatchNCQcmds
+80000cd8   _submitCmd
+8000d928   _support4NativeCommandQueuing
+8000d91c   _support4PwrMgmtInitiatedByDevice
+8000d924   _support4PwrMgmtInitiatedByDeviceAfterEnable
+8000d920   _support4PwrMgmtInitiatedByDeviceEnabled
+8000d918   _support4PwrMgmtInitiatedByHost
+8000bca0   _swCtrlFeatures
+8000d8f8   _temp
+8000d940   _tempCnt
+8000d8d0   _tempDebug0
+8000d8d4   _tempDebug1
+8000d8d8   _tempDebug2
+8000d8dc   _tempDebug3
+80001784   _testWriteDsFis
+80001840   _testWritePsFis
+80001694   _testWriteRegFis
+80001948   _testWriteSdbFis
+8000198c   _testWriteUnknownFis
+8000a600   _unlink
+80000274   _waitForXms
+8000d930   _wrRdByteCntCompStatus
+80009be0   _write
+8000a7c0   _writemsg
+ffffffff   binit
+8000d640   cinit
+80000000   edata
+8000d94c   end
+8000aa60   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+80000000   .data
+80000000   .text
+80000000   ___data__
+80000000   ___edata__
+80000000   ___text__
+80000000   _sata_init_and_spin_up
+80000000   edata
+8000018c   _placeHbaInIdle
+80000274   _waitForXms
+800002c0   _associateMem2HBA
+800003f8   _enableRcvFis
+80000440   _spinUpDeviceAndWaitForInitToComplete
+800005cc   _setSataSpeed
+80000624   _enableDisableInt
+800006f4   _clearIntOrErrorDiag
+80000780   _clearError
+800007b0   _initMemory
+80000818   _clearCmdTableAndDmaBuff
+80000890   _clearRcvFis
+800008ec   _invokeHBAReset
+80000930   _invokePortReset
+80000bd4   _startCmdListProcessing
+80000cd8   _submitCmd
+80000dd0   _submitBatchNCQcmds
+80000e20   _getRegStatus
+80000e40   _setupCfisEntriesForDataRdWr
+80001040   _modifyCfisEntries4NCQ
+800010f4   _buildCmdFis
+80001254   _getCmdFis
+80001374   _getDmaSetupFis
+800013f0   _getPioSetupFis
+800014e0   _getRegDev2HostFis
+800015b4   _getSetDevBitsFis
+80001628   _getUnkownFis
+80001694   _testWriteRegFis
+80001784   _testWriteDsFis
+80001840   _testWritePsFis
+80001948   _testWriteSdbFis
+8000198c   _testWriteUnknownFis
+80001af4   _initTimer1ms
+80001b2c   _initCCCint
+80001ba0   _eanbleCCCint
+80001bb0   _disableCCCint
+80001bc4   _cfgDmaSetting
+80001be4   _chceckSysMemorySize
+80001c58   _compMemContent
+80001cd4   _setupCfisEntriesForSetFeatureAll
+80001e1c   _setupCfisEntriesForSetFeature
+80001f40   _invokeIdentifyDevCmd
+80002084   _invokeSetFeatureCmd
+8000216c   _initBaseAddresses
+800021a4   _performFirmwareInit
+800022b4   _clearSystemMemory
+800022c8   _clearCmdList
+800022e4   _clearIndividualCmdList
+800022f8   _clearCmdTables
+80002374   _clearIndividualCmdTable
+800023c8   _clearDmaBuffers
+800023ec   _associtateCmdSlotWithCmdTable
+80002440   _associtateCmdTableWithPrds
+8000250c   _initPhyAndDmaPars
+80002530   _initIntAndClearFlags
+80002580   _associateSysMem2Hba
+800025a0   _sataIsr
+800025d4   _invokeSoftReset
+800029b8   _setupCfisEntriesForSwReset
+80002b0c   _detPwrMgmtSupport
+80002b70   _detHostPwrMgmtStateCfg
+80002ba4   _cfgHBAlinkPwrTransState
+80002bec   _reqPwrTransState
+80002c98   _enableDisableHBAlinkPwrMgmt
+80002ce4   _detHBApwrTransSupport
+80002d40   _cfgHbaPwrTrans
+80002e2c   _parseDeviceCapabilityNdetermineLowPowerSupport
+80002eec   _captureDeviceState
+80002f94   _exitHostPwrDwn
+80002fb0   _pllInit
+800030e0   _EVMOMAPL138_init
+8000310c   _EVMOMAPL138_initRAM
+800032c8   _EVMOMAPL138_enableDsp
+800032f4   _EVMOMAPL138_pinmuxConfig
+80003390   _EVMOMAPL138_lpscTransition
+80003768   _config_pll0
+800039a4   _config_pll1
+80003b88   _UTIL_printMem
+80003ce0   _UTIL_isUIBoardAttached
+80003d00   __divd
+80004900   _I2CGPIO_init
+800049d4   _I2CGPIO_getInput
+80004af0   _I2CGPIO_getInputAll
+80004c00   _I2CGPIO_setOutput
+80004d48   _I2CGPIO_setOutputAll
+80005260   __printfi
+800056a0   _GPIO_setDir
+80005718   _GPIO_getInput
+8000578c   _GPIO_setOutput
+8000580c   _GPIO_toggleLoop
+80005a20   _I2C_init
+80005b0c   _I2C_read
+80005c68   _I2C_write
+80005da0   _fputs
+80006640   _TEST_sata
+8000678c   _SATA_init
+80006804   _sata_DoTest
+80006e40   _free
+800070c0   __divull
+80007bc0   _USTIMER_init
+80007ca4   _USTIMER_delay
+80007d34   _USTIMER_reset
+80007d64   _USTIMER_get
+80007d78   _USTIMER_set
+80007f60   __divul
+80008100   _setvbuf
+800082a0   _HOSTrename
+80008420   __frcmpyd_div
+800085a0   _malloc
+80008860   _fputc
+80008860   _putc
+80008ae0   _fclose
+80008c00   _HOSTlseek
+80008d00   __auto_init
+80008f00   __wrt_ok
+80009000   _HOSTopen
+800090e0   _atoi
+800091c0   _close
+800092a0   _exit
+80009380   _memset
+80009460   _HOSTread
+80009520   _HOSTunlink
+800095e0   _HOSTwrite
+800096a0   __cleanup
+80009820   __c6xabi_divu
+80009820   __divu
+800098e0   __doflush
+800099a0   _fseek
+80009a60   _lseek
+80009b20   _ltoa
+80009be0   _write
+80009ca0   _HOSTclose
+80009d40   __divli
+80009f20   __fixdli
+8000a060   _copy_in
+8000a1a0   _memcpy
+8000a380   __fltlid
+8000a400   __llshl
+8000a480   _c_int00
+8000a500   _printf
+8000a580   _readmsg
+8000a600   _unlink
+8000a680   _main
+8000a700   __subcull
+8000a760   _memccpy
+8000a7c0   _writemsg
+8000a818   C$$IO$$
+8000a820   ___isinf
+8000a8e0   __args_main
+8000a920   __llshru
+8000a960   __remli
+8000a9a0   __negll
+8000a9c0   __nop
+8000aa20   C$$EXIT
+8000aa20   _abort
+8000aa40   _remove
+8000aa60   __CIOBUF_
+8000aa60   ___etext__
+8000aa60   etext
+8000ac00   _CmdLists
+8000b000   _CmdTable
+8000b400   _prdTableDataBuff
+8000bc00   _RcvFis
+8000bca0   _swCtrlFeatures
+8000bca4   _myCmdFis
+8000bcb4   _myDsFis
+8000bcc8   _myPsFis
+8000bcd4   _myRegFis
+8000bcdd   _mySdbFis
+8000bce4   _myUnknownFis
+8000bd28   _debugP0sctl
+8000bd40   _debugP0stat
+8000bd58   __ftable
+8000be48   __tmpnams
+8000bee8   __ft_end
+8000c08c   __cleanup_ptr
+8000c090   __dtors_ptr
+8000c094   ___TI_enable_exit_profile_output
+8000c098   __lock
+8000c09c   __unlock
+8000c0a8   __stack
+8000c8a8   __STACK_END
+8000c8a8   __sys_memory
+8000d3b0   __ctypes_
+8000d550   _bitval_u32
+8000d640   ___cinit__
+8000d640   cinit
+8000d8c4   $bss
+8000d8c4   .bss
+8000d8c4   ___bss__
+8000d8c4   _progStatus
+8000d8c8   _Dev28bitLbaAddress
+8000d8cc   _sataRegs
+8000d8d0   _tempDebug0
+8000d8d4   _tempDebug1
+8000d8d8   _tempDebug2
+8000d8dc   _tempDebug3
+8000d8e0   _PioCmd
+8000d8e2   _cmdSlot2Use
+8000d8e4   _intIsrCnt
+8000d8e6   _intIsrFlag
+8000d8e8   _intHandlingMethod
+8000d8ec   _pwrMgmtCap
+8000d8f0   _hostPwrMgmtCfg
+8000d8f4   _intSpeed
+8000d8f8   _temp
+8000d8fc   _pIdDevData
+8000d900   _IdDevData
+8000d902   _sataCapabilities
+8000d904   _sataFeaturesSupported
+8000d906   _sataFeaturesEnabled
+8000d908   _pIdDevPwrData
+8000d90c   _p0sctlHighp0sstsLow
+8000d910   _cmdListWrPrdCnt
+8000d914   _cmdListRdPrdCnt
+8000d918   _support4PwrMgmtInitiatedByHost
+8000d91c   _support4PwrMgmtInitiatedByDevice
+8000d920   _support4PwrMgmtInitiatedByDeviceEnabled
+8000d924   _support4PwrMgmtInitiatedByDeviceAfterEnable
+8000d928   _support4NativeCommandQueuing
+8000d92c   _hbaPwrState
+8000d930   _wrRdByteCntCompStatus
+8000d934   _lineSpeedNegotiated
+8000d938   _debugStat
+8000d93c   _debugP0CIreg
+8000d940   _tempCnt
+8000d944   _pscRegs
+8000d94c   ___end__
+8000d94c   end
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[247 symbols]

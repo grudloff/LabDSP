@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lab4p2/FFT_recursive.c&apos; to &apos;Lab4p2.c&apos;" description="Rename resource &apos;FFT_recursive.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="FFT_recursive.c" name="Lab4p2.c" stamp="1526322351690" updateReferences="true"/>
+</session>

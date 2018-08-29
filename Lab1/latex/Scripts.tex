@@ -1,0 +1,60 @@
+\newcommand{\imagen}[4][0.8]{%[0.8] parámetro por defecto para la escala.
+	\begin{figure}[H]\centering
+	\includegraphics[width=#1\textwidth]{img/#2}
+	\caption{#4}{#3}
+	\end{figure}
+	}
+	%EJEMPLOS
+	%"\imagen{007}{\label{fig:007}}{Hola}". Imagen->img/007, con label "fig:007" y descripcion Hola. Escala 0.8.
+	%"\imagen[0.5]{007}{fig:007}{Hola}". Mismo anterior, con escala forzada a [0.5] del texto.
+	
+\newcommand{\bimagen}[6]{%[1] parámetro por defecto para la escala de la minipage.
+	\hspace{-0.04\textwidth}
+	\begin{minipage}[t]{0.47\textwidth}
+	\begin{figure}[H]\centering
+	\includegraphics[width=1\textwidth]{img/#1}
+	\caption{#3}{#2}
+	\end{figure}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.47\textwidth}
+	\begin{figure}[H]\centering
+	\includegraphics[width=1\textwidth]{img/#4}
+	\caption{#6}{#5}
+	\end{figure}
+	\end{minipage}
+	\vspace{1em}
+}
+	
+\newcommand{\trimagen}[9]{%[1] parámetro por defecto para la escala de la minipage.
+	\hspace{-0.05\textwidth}
+	\begin{minipage}[t]{0.3\textwidth}
+	\begin{figure}[H]\centering
+	\includegraphics[width=1\textwidth]{img/#1}
+	\caption{#3}{#2}
+	\end{figure}
+	\end{minipage}
+	\hspace{0.05\textwidth}
+	\begin{minipage}[t]{0.3\textwidth}
+	\begin{figure}[H]\centering
+	\includegraphics[width=1\textwidth]{img/#4}
+	\caption{#6}{#5}
+	\end{figure}
+	\end{minipage}
+	\hspace{0.05\textwidth}
+	\begin{minipage}[t]{0.3\textwidth}
+	\begin{figure}[H]\centering
+	\includegraphics[width=1\textwidth]{img/#7}
+	\caption{#9}{#8}
+	\end{figure}
+	\end{minipage}
+	\vspace{1em}
+}
+%EJEMPLO
+%\trimagen
+%	{imagen1}{\label{fig:1}}
+%		{Descripcion1}
+%	{imagen2}{\label{fig:2}}
+%		{Descripcion2}
+%	{imagen3}{\label{fig:3}}
+%		{Descripcion3}

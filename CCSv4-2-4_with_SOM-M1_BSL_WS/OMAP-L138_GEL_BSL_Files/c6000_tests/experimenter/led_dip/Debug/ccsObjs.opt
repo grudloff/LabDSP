@@ -1,0 +1,1 @@
+"./src/test_led_dip.obj" "./src/main_led_dip.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

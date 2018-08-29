@@ -1,0 +1,1 @@
+"./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd" -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 

@@ -1,0 +1,1 @@
+"./src/test_image_sensor.obj" "./src/main_image_sensor.obj" "./src/evmomapl138_mt9v032.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

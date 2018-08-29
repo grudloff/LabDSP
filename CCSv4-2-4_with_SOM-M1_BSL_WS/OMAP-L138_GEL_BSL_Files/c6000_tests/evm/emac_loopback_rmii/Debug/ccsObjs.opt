@@ -1,0 +1,1 @@
+"./src/test_rmii_loopback.obj" "./src/main_rmii_loopback.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

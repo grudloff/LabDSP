@@ -1,0 +1,1 @@
+"./src/test_nand.obj" "./src/main_nand.obj" -l"../../../../bsl/lib/evmomapl138_bsl.lib" -l"libc.a" "../linker_dsp.cmd" 

@@ -1,0 +1,9 @@
+// ave5.cof
+// this file was generated using function L138_fir_coeffs.m
+ 
+#define N 5
+ 
+float h[N] = { 
+2.0000E-001,2.0000E-001,2.0000E-001,2.0000E-001,2.0000E-001
+};
+

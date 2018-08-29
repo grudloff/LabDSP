@@ -1,0 +1,494 @@
+******************************************************************************
+                  TMS470 Linker PC v4.6.3                      
+******************************************************************************
+>> Linked Wed May 25 09:39:36 2011
+
+OUTPUT FILE NAME:   <AM1808eXpSPIFlashTest.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 800075ac
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  shared_ram            80000000   00020000  0000924d  00016db3  RWIX
+  external_ram          c0000000   08000000  00000000  08000000  RWIX
+  arm_local_ram         ffff0000   00002000  00000000  00002000  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+80000000    80000000    000077a8   000077a8    r-x
+  80000000    80000000    000077a8   000077a8    r-x .text
+800077a8    800077a8    00001691   00000000    rw-
+  800077a8    800077a8    00000800   00000000    rw- .stack
+  80007fa8    80007fa8    00000800   00000000    rw- .sysmem
+  800087a8    800087a8    00000691   00000000    rw- .bss
+80008e3c    80008e3c    000001f0   000001f0    rw-
+  80008e3c    80008e3c    000001f0   000001f0    rw- .data
+8000902c    8000902c    00000224   00000224    r--
+  8000902c    8000902c    00000184   00000184    r-- .const
+  800091b0    800091b0    000000a0   000000a0    r-- .cinit
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    80000000    000077a8     
+                  80000000    00001660     am1808_rts.lib : _printfi.obj (.text)
+                  80001660    00000cb0     am1808_bsl.lib : evmam1808.obj (.text)
+                  80002310    00000774     test_spiflash.obj (.text)
+                  80002a84    00000638     am1808_rts.lib : memory.obj (.text)
+                  800030bc    000005f0     am1808_bsl.lib : evmam1808_spiflash.obj (.text)
+                  800036ac    000005c8     am1808_rts.lib : lowlev.obj (.text)
+                  80003c74    00000550     am1808_bsl.lib : evmam1808_spi.obj (.text)
+                  800041c4    00000530                    : evmam1808_i2c_gpio.obj (.text)
+                  800046f4    000004f8     am1808_rts.lib : trgdrv.obj (.text)
+                  80004bec    000003d4     am1808_bsl.lib : spiflash_numonyx.obj (.text)
+                  80004fc0    000003ac                    : evmam1808_gpio.obj (.text)
+                  8000536c    000003a8                    : evmam1808_i2c.obj (.text)
+                  80005714    00000300     am1808_rts.lib : fopen.obj (.text)
+                  80005a14    000002b8                    : ull_div32.obj (.text)
+                  80005ccc    0000023c     am1808_bsl.lib : evmam1808_timer.obj (.text)
+                  80005f08    00000214     am1808_rts.lib : fd_add32.obj (.text)
+                  8000611c    00000190                    : fd_div32.obj (.text)
+                  800062ac    00000190                    : fputs.obj (.text)
+                  8000643c    00000180                    : memcpy32.obj (.text)
+                  800065bc    00000128                    : fd_mul32.obj (.text)
+                  800066e4    00000118                    : _io_perm.obj (.text)
+                  800067fc    00000118                    : i_div32.obj (.text)
+                  80006914    00000114                    : setvbuf.obj (.text)
+                  80006a28    00000110                    : fflush.obj (.text)
+                  80006b38    000000f4                    : u_div32.obj (.text)
+                  80006c2c    000000d8     main_spiflash.obj (.text)
+                  80006d04    000000d4     am1808_rts.lib : auto_init.obj (.text)
+                  80006dd8    000000d4                    : fputc.obj (.text)
+                  80006eac    000000d0                    : fd_cmp32.obj (.text)
+                  80006f7c    000000b0                    : memset32.obj (.text)
+                  8000702c    000000a8                    : trgmsg.obj (.text)
+                  800070d4    00000098                    : fclose.obj (.text)
+                  8000716c    00000088                    : cpy_tbl.obj (.text)
+                  800071f4    00000084                    : atoi.obj (.text)
+                  80007278    00000080                    : fseek.obj (.text)
+                  800072f8    00000080                    : ltoa.obj (.text)
+                  80007378    00000078                    : exit.obj (.text)
+                  800073f0    00000070                    : printf.obj (.text)
+                  80007460    0000006c                    : copy_decompress_rle.obj (.text:decompress:rle)
+                  800074cc    0000005c                    : fd_toi32.obj (.text)
+                  80007528    00000048                    : strncpy.obj (.text)
+                  80007570    0000003c                    : i_tofd32.obj (.text)
+                  800075ac    00000038                    : boot.obj (.text)
+                  800075e4    00000034                    : memcmp.obj (.text)
+                  80007618    0000002c                    : args_main.obj (.text)
+                  80007644    0000002c                    : memchr.obj (.text)
+                  80007670    0000002c                    : strcmp.obj (.text)
+                  8000769c    00000028                    : memccpy.obj (.text)
+                  800076c4    00000028                    : strchr.obj (.text)
+                  800076ec    00000024                    : _lock.obj (.text)
+                  80007710    00000020                    : icall32.obj (.text)
+                  80007730    0000001c                    : strcpy.obj (.text)
+                  8000774c    0000001c                    : strlen.obj (.text)
+                  80007768    0000001c                    : copy_zero_init.obj (.text:decompress:ZI)
+                  80007784    0000001c                    : copy_decompress_none.obj (.text:decompress:none)
+                  800077a0    00000004                    : remove.obj (.text)
+                  800077a4    00000004                    : tdeh_init.obj (.text)
+
+.stack     0    800077a8    00000800     UNINITIALIZED
+                  800077a8    00000800     --HOLE--
+
+.sysmem    0    80007fa8    00000800     UNINITIALIZED
+                  80007fa8    00000008     am1808_rts.lib : memory.obj (.sysmem)
+                  80007fb0    000007f8     --HOLE--
+
+.bss       0    800087a8    00000691     UNINITIALIZED
+                  800087a8    00000200     test_spiflash.obj (.bss:rx_buffer)
+                  800089a8    00000200     test_spiflash.obj (.bss:tx_buffer)
+                  80008ba8    00000120     am1808_rts.lib : trgmsg.obj (.bss:__CIOBUF_)
+                  80008cc8    000000c8                    : trgdrv.obj (.bss:result$1)
+                  80008d90    000000a0                    : defs.obj (.bss:_tmpnams)
+                  80008e30    00000008                    : trgdrv.obj (.bss)
+                  80008e38    00000001     am1808_bsl.lib : evmam1808_i2c.obj (.bss)
+
+.data      0    80008e3c    000001f0     
+                  80008e3c    000000f0     am1808_rts.lib : defs.obj (.data:_ftable)
+                  80008f2c    00000078                    : lowlev.obj (.data:_device)
+                  80008fa4    00000050                    : lowlev.obj (.data:_stream)
+                  80008ff4    00000010                    : defs.obj (.data)
+                  80009004    0000000c                    : memory.obj (.data)
+                  80009010    00000008                    : _lock.obj (.data)
+                  80009018    00000008                    : exit.obj (.data)
+                  80009020    00000004                    : fopen.obj (.data)
+                  80009024    00000004                    : lowlev.obj (.data)
+                  80009028    00000004                    : stkdepth_vars.obj (.data)
+
+.const     0    8000902c    00000184     
+                  8000902c    00000101     am1808_rts.lib : ctype.obj (.const:_ctypes_)
+                  8000912d    00000003     --HOLE-- [fill = 0]
+                  80009130    00000080     am1808_bsl.lib : evmam1808.obj (.const:bitval_u32)
+
+.cinit     0    800091b0    000000a0     
+                  800091b0    0000007c     (.cinit..data.load) [load image, compression = rle]
+                  8000922c    0000000c     (__TI_handler_table)
+                  80009238    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  80009240    00000010     (__TI_cinit_table)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 80009240 records: 2, size/record: 8, table size: 16
+	.data: load addr=800091b0, load size=0000007c bytes, run addr=80008e3c, run size=000001f0 bytes, compression=rle
+	.bss: load addr=80009238, load size=00000008 bytes, run addr=800087a8, run size=00000691 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 8000922c records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_zero_init
+	index: 1, handler: __TI_decompress_rle
+	index: 2, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+80007378   C$$EXIT
+80007074   C$$IO$$
+80001660   EVMAM1808_init
+800016a0   EVMAM1808_initRAM
+800018ec   EVMAM1808_lpscTransition
+8000186c   EVMAM1808_pinmuxConfig
+80005054   GPIO_getInput
+80004fc0   GPIO_setDir
+800050e0   GPIO_setOutput
+80005174   GPIO_toggleLoop
+80004b78   HOSTclock
+80004b0c   HOSTclose
+80004a68   HOSTlseek
+800049d8   HOSTopen
+80004950   HOSTread
+800048b0   HOSTrename
+8000484c   HOSTtime
+800047e4   HOSTunlink
+8000475c   HOSTwrite
+800042a8   I2CGPIO_getInput
+800043e0   I2CGPIO_getInputAll
+800041c4   I2CGPIO_init
+80004528   I2CGPIO_setOutput
+80004678   I2CGPIO_setOutputAll
+8000536c   I2C_init
+8000546c   I2C_read
+800055c0   I2C_write
+80007710   IND_CALL
+80004bec   NUMONYX_initSpiFlashPort
+80004df0   NUMONYX_sendCmdFastRead
+80004e3c   NUMONYX_sendCmdPageProgram
+80004e78   NUMONYX_sendCmdSectorErase
+80004dc4   NUMONYX_sendCmdWriteEnable
+80004c70   NUMONYX_verifyDeviceID
+80004d48   NUMONYX_waitFlashReady
+800032a4   SPIFLASH_erase
+800030bc   SPIFLASH_init
+8000317c   SPIFLASH_read
+800032f8   SPIFLASH_readMACAddr
+8000323c   SPIFLASH_write
+80003314   SPIFLASH_writeMACAddr
+80003c74   SPI_init
+80003fa4   SPI_xfer
+80002310   TEST_spiFlash
+80005dd4   USTIMER_delay
+80005e90   USTIMER_get
+80005ccc   USTIMER_init
+80005e60   USTIMER_reset
+80005ea0   USTIMER_set
+80002210   UTIL_isUIBoardAttached
+800020c8   UTIL_printMem
+80008ba8   __CIOBUF_
+80007fa8   __STACK_END
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+80009240   __TI_CINIT_Base
+80009250   __TI_CINIT_Limit
+8000922c   __TI_Handler_Table_Base
+80009238   __TI_Handler_Table_Limit
+00000001   __TI_args_main
+80006d04   __TI_auto_init
+80007784   __TI_decompress_none
+80007460   __TI_decompress_rle
+800091b0   __TI_static_base__
+80007768   __TI_zero_init
+80006eac   __aeabi_cdcmpeq
+80006eac   __aeabi_cdcmple
+800074cc   __aeabi_d2iz
+80005f14   __aeabi_dadd
+8000611c   __aeabi_ddiv
+800065bc   __aeabi_dmul
+80005f08   __aeabi_dsub
+80007570   __aeabi_i2d
+800067fc   __aeabi_idivmod
+80006f7c   __aeabi_memclr
+80006f7c   __aeabi_memclr4
+80006f7c   __aeabi_memclr8
+8000643c   __aeabi_memcpy
+8000643c   __aeabi_memcpy4
+8000643c   __aeabi_memcpy8
+80006f80   __aeabi_memset
+80006f80   __aeabi_memset4
+80006f80   __aeabi_memset8
+80009000   __aeabi_stderr
+80008ff8   __aeabi_stdin
+80008ffc   __aeabi_stdout
+80006b38   __aeabi_uidivmod
+80005a14   __aeabi_uldivmod
+ffffffff   __binit__
+ffffffff   __c_args__
+800077a8   __stack
+800077a4   __tdeh_init
+80007618   _args_main
+800075ac   _c_int00
+80005854   _cleanup
+80009018   _cleanup_ptr
+8000902c   _ctypes_
+80006a28   _doflush
+8000901c   _dtors_ptr
+80008ff4   _ft_end
+80008e3c   _ftable
+80009010   _lock
+80007704   _nop
+800013d0   _printfi
+80006784   _rd_ok
+800076f8   _register_lock
+800076ec   _register_unlock
+80007fa8   _sys_memory
+80008d90   _tmpnams
+80009014   _unlock
+800066e4   _wrt_ok
+80007380   abort
+80003b98   add_device
+800071f4   atoi
+ffffffff   binit
+80009130   bitval_u32
+80003064   calloc
+80003b08   close
+80001c44   config_pll0
+80001eb4   config_pll1
+8000716c   copy_in
+8000738c   exit
+800070d4   fclose
+80006aac   fflush
+80003b04   find_registered_device
+800059a8   fopen
+80006dd8   fputc
+800062ac   fputs
+80002c40   free
+800058b8   freopen
+80007278   fseek
+800046f4   getenv
+80003a8c   lseek
+800072f8   ltoa
+80006c2c   main
+80009028   main_func_sp
+80002b88   malloc
+80002f28   memalign
+8000769c   memccpy
+80007644   memchr
+800075e4   memcmp
+8000643c   memcpy
+80006f8c   memset
+80002a84   minit
+800039bc   open
+800073f0   printf
+80006dd8   putc
+80006ea0   putchar
+80006408   puts
+800038d8   read
+8000707c   readmsg
+80002d9c   realloc
+800077a0   remove
+8000388c   remove_device
+80003820   rename
+80006914   setvbuf
+800076c4   strchr
+80007670   strcmp
+80007730   strcpy
+8000774c   strlen
+80007528   strncpy
+800037dc   unlink
+800036ac   write
+8000702c   writemsg
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000800   __STACK_SIZE
+00000800   __SYSMEM_SIZE
+800013d0   _printfi
+80001660   EVMAM1808_init
+800016a0   EVMAM1808_initRAM
+8000186c   EVMAM1808_pinmuxConfig
+800018ec   EVMAM1808_lpscTransition
+80001c44   config_pll0
+80001eb4   config_pll1
+800020c8   UTIL_printMem
+80002210   UTIL_isUIBoardAttached
+80002310   TEST_spiFlash
+80002a84   minit
+80002b88   malloc
+80002c40   free
+80002d9c   realloc
+80002f28   memalign
+80003064   calloc
+800030bc   SPIFLASH_init
+8000317c   SPIFLASH_read
+8000323c   SPIFLASH_write
+800032a4   SPIFLASH_erase
+800032f8   SPIFLASH_readMACAddr
+80003314   SPIFLASH_writeMACAddr
+800036ac   write
+800037dc   unlink
+80003820   rename
+8000388c   remove_device
+800038d8   read
+800039bc   open
+80003a8c   lseek
+80003b04   find_registered_device
+80003b08   close
+80003b98   add_device
+80003c74   SPI_init
+80003fa4   SPI_xfer
+800041c4   I2CGPIO_init
+800042a8   I2CGPIO_getInput
+800043e0   I2CGPIO_getInputAll
+80004528   I2CGPIO_setOutput
+80004678   I2CGPIO_setOutputAll
+800046f4   getenv
+8000475c   HOSTwrite
+800047e4   HOSTunlink
+8000484c   HOSTtime
+800048b0   HOSTrename
+80004950   HOSTread
+800049d8   HOSTopen
+80004a68   HOSTlseek
+80004b0c   HOSTclose
+80004b78   HOSTclock
+80004bec   NUMONYX_initSpiFlashPort
+80004c70   NUMONYX_verifyDeviceID
+80004d48   NUMONYX_waitFlashReady
+80004dc4   NUMONYX_sendCmdWriteEnable
+80004df0   NUMONYX_sendCmdFastRead
+80004e3c   NUMONYX_sendCmdPageProgram
+80004e78   NUMONYX_sendCmdSectorErase
+80004fc0   GPIO_setDir
+80005054   GPIO_getInput
+800050e0   GPIO_setOutput
+80005174   GPIO_toggleLoop
+8000536c   I2C_init
+8000546c   I2C_read
+800055c0   I2C_write
+80005854   _cleanup
+800058b8   freopen
+800059a8   fopen
+80005a14   __aeabi_uldivmod
+80005ccc   USTIMER_init
+80005dd4   USTIMER_delay
+80005e60   USTIMER_reset
+80005e90   USTIMER_get
+80005ea0   USTIMER_set
+80005f08   __aeabi_dsub
+80005f14   __aeabi_dadd
+8000611c   __aeabi_ddiv
+800062ac   fputs
+80006408   puts
+8000643c   __aeabi_memcpy
+8000643c   __aeabi_memcpy4
+8000643c   __aeabi_memcpy8
+8000643c   memcpy
+800065bc   __aeabi_dmul
+800066e4   _wrt_ok
+80006784   _rd_ok
+800067fc   __aeabi_idivmod
+80006914   setvbuf
+80006a28   _doflush
+80006aac   fflush
+80006b38   __aeabi_uidivmod
+80006c2c   main
+80006d04   __TI_auto_init
+80006dd8   fputc
+80006dd8   putc
+80006ea0   putchar
+80006eac   __aeabi_cdcmpeq
+80006eac   __aeabi_cdcmple
+80006f7c   __aeabi_memclr
+80006f7c   __aeabi_memclr4
+80006f7c   __aeabi_memclr8
+80006f80   __aeabi_memset
+80006f80   __aeabi_memset4
+80006f80   __aeabi_memset8
+80006f8c   memset
+8000702c   writemsg
+80007074   C$$IO$$
+8000707c   readmsg
+800070d4   fclose
+8000716c   copy_in
+800071f4   atoi
+80007278   fseek
+800072f8   ltoa
+80007378   C$$EXIT
+80007380   abort
+8000738c   exit
+800073f0   printf
+80007460   __TI_decompress_rle
+800074cc   __aeabi_d2iz
+80007528   strncpy
+80007570   __aeabi_i2d
+800075ac   _c_int00
+800075e4   memcmp
+80007618   _args_main
+80007644   memchr
+80007670   strcmp
+8000769c   memccpy
+800076c4   strchr
+800076ec   _register_unlock
+800076f8   _register_lock
+80007704   _nop
+80007710   IND_CALL
+80007730   strcpy
+8000774c   strlen
+80007768   __TI_zero_init
+80007784   __TI_decompress_none
+800077a0   remove
+800077a4   __tdeh_init
+800077a8   __stack
+80007fa8   __STACK_END
+80007fa8   _sys_memory
+80008ba8   __CIOBUF_
+80008d90   _tmpnams
+80008e3c   _ftable
+80008ff4   _ft_end
+80008ff8   __aeabi_stdin
+80008ffc   __aeabi_stdout
+80009000   __aeabi_stderr
+80009010   _lock
+80009014   _unlock
+80009018   _cleanup_ptr
+8000901c   _dtors_ptr
+80009028   main_func_sp
+8000902c   _ctypes_
+80009130   bitval_u32
+800091b0   __TI_static_base__
+8000922c   __TI_Handler_Table_Base
+80009238   __TI_Handler_Table_Limit
+80009240   __TI_CINIT_Base
+80009250   __TI_CINIT_Limit
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[305 symbols]

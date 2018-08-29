@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>L138_sine_DIP_intr</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>com.ti.ccstudio.managedbuild.core.ccsNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>L138_aic3106_init.c</name>
+			<type>1</type>
+			<location>C:/eXperimenter/L138_support/L138_aic3106_init.c</location>
+		</link>
+		<link>
+			<name>L138_aic3106_init.h</name>
+			<type>1</type>
+			<location>C:/eXperimenter/L138_support/L138_aic3106_init.h</location>
+		</link>
+		<link>
+			<name>L138_eXperimenter.ccxml</name>
+			<type>1</type>
+			<location>C:/eXperimenter/L138_support/L138_eXperimenter.ccxml</location>
+		</link>
+		<link>
+			<name>linker_dsp.cmd</name>
+			<type>1</type>
+			<location>C:/eXperimenter/L138_support/linker_dsp.cmd</location>
+		</link>
+		<link>
+			<name>vectors_intr.asm</name>
+			<type>1</type>
+			<location>C:/eXperimenter/L138_support/vectors_intr.asm</location>
+		</link>
+	</linkedResources>
+</projectDescription>

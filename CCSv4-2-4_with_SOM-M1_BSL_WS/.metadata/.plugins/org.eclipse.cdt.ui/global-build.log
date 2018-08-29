@@ -1,0 +1,793 @@
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../vectors_intr.asm"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="vectors_intr.d_raw"  "../vectors_intr.asm"
+'Finished building: "../vectors_intr.asm"'
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building file: "../L138_LCDK_aic3106_init.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="L138_LCDK_aic3106_init.d_raw"  "../L138_LCDK_aic3106_init.c"
+'Finished building: "../L138_LCDK_aic3106_init.c"'
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_intr.obj" "../linker_dsp.cmd"  -llibc.a -l"C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Test.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../vectors_intr.asm"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="vectors_intr.d_raw"  "../vectors_intr.asm"
+'Finished building: "../vectors_intr.asm"'
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building file: "../L138_LCDK_aic3106_init.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="L138_LCDK_aic3106_init.d_raw"  "../L138_LCDK_aic3106_init.c"
+'Finished building: "../L138_LCDK_aic3106_init.c"'
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_intr.obj" "../linker_dsp.cmd"  -llibc.a -l"C:/Users/BOOLE01/Documents/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Test.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+
+ undefined first referenced            
+  symbol       in file                 
+ --------- ----------------            
+ _vectors  ./L138_LCDK_aic3106_init.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Test.out" not built
+
+gmake[1]: *** [Test.out] Error 1
+>> Compilation failure
+makefile:143: recipe for target 'Test.out' failed
+gmake: *** [all] Error 2
+makefile:139: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+
+ undefined first referenced            
+  symbol       in file                 
+ --------- ----------------            
+ _vectors  ./L138_LCDK_aic3106_init.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Test.out" not built
+
+>> Compilation failure
+makefile:143: recipe for target 'Test.out' failed
+gmake[1]: *** [Test.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+
+ undefined first referenced            
+  symbol       in file                 
+ --------- ----------------            
+ _vectors  ./L138_LCDK_aic3106_init.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Test.out" not built
+
+>> Compilation failure
+makefile:143: recipe for target 'Test.out' failed
+gmake[1]: *** [Test.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+
+ undefined first referenced            
+  symbol       in file                 
+ --------- ----------------            
+ _vectors  ./L138_LCDK_aic3106_init.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Test.out" not built
+
+>> Compilation failure
+makefile:143: recipe for target 'Test.out' failed
+gmake[1]: *** [Test.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "Test.hex"  "Test.out" 
+DEL /F "L138_LCDK_aic3106_init.obj" "main.obj" "vectors_intr.obj" 
+DEL /F "L138_LCDK_aic3106_init.d" "main.d" 
+DEL /F "vectors_intr.d" 
+No se pudo encontrar E:\cosas u\LabDSP\1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS\CCSv4-2-4_with_SOM-M1_BSL_WS\Test\Debug\vectors_intr.d
+'Finished clean'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../vectors_intr.asm"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="vectors_intr.d_raw"  "../vectors_intr.asm"
+'Finished building: "../vectors_intr.asm"'
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building file: "../L138_LCDK_aic3106_init.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Test" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="L138_LCDK_aic3106_init.d_raw"  "../L138_LCDK_aic3106_init.c"
+'Finished building: "../L138_LCDK_aic3106_init.c"'
+ 
+'Building target: "Test.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Test.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Test_linkInfo.xml" --rom_model -o "Test.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_intr.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Test.out"'
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "Lab1p2.hex"  "Lab1p2.out" 
+DEL /F "L138_LCDK_aic3106_init.obj" "main.obj" "vectors_intr.obj" 
+DEL /F "L138_LCDK_aic3106_init.d" "main.d" 
+DEL /F "vectors_intr.d" 
+No se pudo encontrar E:\cosas u\LabDSP\1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS\CCSv4-2-4_with_SOM-M1_BSL_WS\Lab1p2\Debug\Lab1p2.hex
+No se pudo encontrar E:\cosas u\LabDSP\1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS\CCSv4-2-4_with_SOM-M1_BSL_WS\Lab1p2\Debug\vectors_intr.d
+'Finished clean'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building file: "../vectors_poll.asm"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="vectors_poll.d_raw"  "../vectors_poll.asm"
+'Finished building: "../vectors_poll.asm"'
+ 
+'Building file: "../L138_LCDK_aic3106_init.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="L138_LCDK_aic3106_init.d_raw"  "../L138_LCDK_aic3106_init.c"
+'Finished building: "../L138_LCDK_aic3106_init.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Test ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Test.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 81: error #66: expected a ";"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Lab1p2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 10: error #171: expected a declaration
+"../main.c", line 23: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 55: error #20: identifier "codec_data" is undefined
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab1p2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/Lab1p2" --include_path="E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/inc" --include_path="C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "Lab1p2.out"'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/bin/cl6x" -mv6740 --abi=coffabi -g --float_operations_allowed=all --define=c6748 --diag_wrap=off --diag_warning=225 --display_error_number -z --stack_size=0x800 -m"Lab1p2.map" --heap_size=0x800 -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/lib" -i"C:/ti/ccsv7/tools/compiler/c6000_7.4.24/include" --reread_libs --warn_sections --diag_wrap=off --display_error_number --xml_link_info="Lab1p2_linkInfo.xml" --rom_model -o "Lab1p2.out" "./L138_LCDK_aic3106_init.obj" "./main.obj" "./vectors_poll.obj" "../linker_dsp.cmd"  -llibc.a -l"E:/cosas u/LabDSP/1020489B-1_CCSv4-2-4_with_SOM-M1_BSL_WS/CCSv4-2-4_with_SOM-M1_BSL_WS/DSP BSL/lib/evmomapl138_bsl.lib" 
+<Linking>
+'Finished building target: "Lab1p2.out"'
+ 
+
+**** Build Finished ****

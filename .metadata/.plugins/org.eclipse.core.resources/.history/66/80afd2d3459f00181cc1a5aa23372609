@@ -1,0 +1,93 @@
+/***************************************************************************//**
+* \file     Funciones que deben impementar los alumnos
+*
+* \brief    Función 'window' para aplicar ventana hamming a frame
+*           Función 'xcorr' para hacer las autocorrelaciones del frame
+*           Función 'filter' para implementar el filtro autoregresivo (solo polos)
+*
+* \authors  Gonzalo Carrasco
+*******************************************************************************/
+
+/***************************************************************************//**
+**      HEADER FILES
+*******************************************************************************/
+#include <math.h>
+#include "functions.h"
+#include "const_arrays.h"
+
+/******************************************************************************
+**      MACRO DEFINITIONS
+*******************************************************************************/
+
+/***************************************************************************//**
+**      GLOBAL VARIABLES
+*******************************************************************************/
+
+/***************************************************************************//**
+**      INTERNAL FUNCTION DEFINITIONS
+*******************************************************************************/
+
+/***************************************************************************//**
+*   \brief Pondera cada elemento del frame por los coefincientes
+*           correspondientes de la ventana Hamming.
+*
+*   \param  input : arreglo de entrada para frame
+*           outut : arreglo de salida para frame
+*
+*   \return Void.
+*******************************************************************************/
+void window(int* output, int* input){
+    int i;
+    for (i = 0; i < FRAME_SIZE; ++i){
+        output[i]=(hamm_win[i]*input[i])>>15;
+    }
+}
+
+/***************************************************************************//**
+*   \brief  Función para computar el arreglo de autocorrelaciones del frame
+*
+*   \param  rms_out     : cómputo de el valor RMS del frame de entrada
+*           autocorr_out: vector de autocorrelaciones para 'lags' diferentes
+*           input       : arreglo del frame de entrada
+*           pm1         : largo del arreglo de correlaciones
+*
+*   \return Void.
+*******************************************************************************/
+void xcorr(float* rms_out, float* autocorr_out, int* input, short pm1){
+    unsigned int i,j;
+    for(i=0;i<pm1;i++){
+
+        autocorr_out[i]=0;
+        for(j=0;j<FRAME_SIZE;j++){                       //Aproximación de xcorr si esta es WSS
+            autocorr_out[i]+=input[j]*input[j+i];
+        }
+    }
+    *rms_out=sqrtf(autocorr_out[0]/FRAME_SIZE);
+}
+
+/***************************************************************************//**
+*   \brief  Función implementar filtro autoregresivo (solo polos) para la
+*           síntesis de voz.
+*
+*   \param  rms_out     : cómputo de el valor RMS del frame de entrada
+*           output      : arreglo de salida filtrada
+*           den_coeff   : arreglo de coeficientes de denominador
+*           p           : orden del filtro
+*           input       : arreglo de entrada a filtar
+*
+*   \return Void.
+*******************************************************************************/
+void filter(float *rms_out, float *output, float *den_coeff, short p, int *input){
+    *rms_out=0;
+    int k,i;
+    for (k = 0; k < FRAME_SIZE; ++k){
+        output[k]=input[k];
+        for (i = 1; i < p+1; ++i){
+            if (k-i>=0)
+                output[k]-=den_coeff[i]*output[k-i];
+        }
+        *rms_out+=powf(output[i],2)/FRAME_SIZE;
+    }
+    *rms_out=sqrtf(*rms_out);
+}
+
